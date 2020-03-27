@@ -38,7 +38,7 @@ export default class Header extends Component {
                 <Nav.Link href="/about"> About </Nav.Link>
                 <Nav.Link href="/sellers"> Sellers </Nav.Link>
                 <Nav.Link href="https://edw1x.github.io/Lab1/?#/contacts"> Contacts </Nav.Link>
-                <Nav.Link href="https://edw1x.github.io/Lab1/?#/login"> Login </Nav.Link>
+                <Nav.Link href="/login"> Login </Nav.Link>
               </Nav>
               <Form className="cA" inline>
                 <div className="cA">
