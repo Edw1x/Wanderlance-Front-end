@@ -1,38 +1,46 @@
-.nav>li>a:hover, .nav>li>a:focus, .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
-    background:#fff;
-  }
-  .dropdown {
-    background:#fff;
-    border:1px solid #ccc;
-    border-radius:4px;
-    width:300px;    
-  }
-  .dropdown-menu>li>a {
-    color:#428bca;
-  }
-  .dropdown ul.dropdown-menu {
-    border-radius:4px;
-    box-shadow:none;
-    margin-top:20px;
-    width:300px;
-  }
-  .dropdown ul.dropdown-menu:before {
-    content: "";
-    border-bottom: 10px solid #fff;
-    border-right: 10px solid transparent;
-    border-left: 10px solid transparent;
-    position: absolute;
-    top: -10px;
-    right: 16px;
-    z-index: 10;
-  }
-  .dropdown ul.dropdown-menu:after {
-    content: "";
-    border-bottom: 12px solid #ccc;
-    border-right: 12px solid transparent;
-    border-left: 12px solid transparent;
-    position: absolute;
-    top: -12px;
-    right: 14px;
-    z-index: 9;
-  }
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic,600italic,700italic,800italic);
+
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+.colorLink {
+  color:white;
+}
+
+.iconRed {
+  color:#461221;
+  width: 40px;
+}
+.moneyColor {
+  color: green;
+  margin-left: 15px;
+}
+.dropdown-menu.show{ 
+  background-color: #15131b; 
+  margin: 10px;
+  width: 175px;
+}
+
+.size{
+  width:60px;
+  height:60px;
+  position: relative;
+  left: -5%;
+}
+
+.fir-circle {
+  height: 47px;
+  width: 47px;
+  border-radius: 100px;
+  border-color: violet;
+  cursor: pointer;
+}
+
+.fir-margin {
+  margin-left: 18px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}

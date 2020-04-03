@@ -3,6 +3,9 @@ import React, { Component } from "react";
 import { Form } from "react-bootstrap";
 import "./text.css";
 
+const token = localStorage.getItem('Token');
+let isLogined = token ? true : false;
+
 export default class Login extends Component {
 
 
@@ -16,7 +19,11 @@ export default class Login extends Component {
     //this.input = React.createRef();
   }
 
-
+  componentWillMount(){
+    if(isLogined){
+      this.props.history.push('/');
+    }
+  }
 
   onSubmit = e => {
     e.preventDefault();
@@ -39,6 +46,8 @@ export default class Login extends Component {
         if (this.state.rememberMe) {
           this.rememberUser();
         }
+        this.props.history.push('/');
+        window.location.reload(false)
       }
     });
 
