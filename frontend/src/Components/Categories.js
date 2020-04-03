@@ -19,7 +19,7 @@ export default class Categories extends Component {
               <p>
               Find any order by this categorie. Any product u can imagine is here.
               </p>
-              <a href="#" class="text red"> See more</a>
+              <a href="/categories/GraphicsandDesign" class="text red"> See more</a>
             </div>
           </div>
 
@@ -37,7 +37,7 @@ export default class Categories extends Component {
               <p>
               Find any order by this categorie. Any product u can imagine is here.
               </p>
-              <a href="#" class="text red"> See more</a>
+              <a href="/categories/DigitalMarketing" class="text red"> See more</a>
             </div>
           </div>
 
@@ -55,7 +55,7 @@ export default class Categories extends Component {
               <p>
               Find any order by this categorie. Any product u can imagine is here.
               </p>
-              <a href="#" class="text red"> See more</a>
+              <a href="/categories/WritingAndTranslation" class="text red"> See more</a>
             </div>
           </div>
 
@@ -73,7 +73,7 @@ export default class Categories extends Component {
               <p>
               Find any order by this categorie. Any product u can imagine is here.
               </p>
-              <a href="#" class="text red"> See more</a>
+              <a href="/categories/VideoAndAnimation" class="text red"> See more</a>
             </div>
           </div>
           <div class="tl-item">
@@ -90,7 +90,7 @@ export default class Categories extends Component {
               <p>
                 Find any order by this categorie. Any product u can imagine is here.
               </p>
-              <a href="#" class="text red"> See more</a>
+              <a href="/categories/MusicAndAudio" class="text red"> See more</a>
             </div>
           </div>
           <div class="tl-item">
@@ -107,7 +107,7 @@ export default class Categories extends Component {
               <p>
               Find any order by this categorie. Any product u can imagine is here.
               </p>
-              <a href="#" class="text red"> See more</a>
+              <a href="/categories/ProgrammingAndTech" class="text red"> See more</a>
             </div>
           </div>
 
@@ -126,7 +126,7 @@ export default class Categories extends Component {
               <p>
               Find any order by this categorie. Any product u can imagine is here.
               </p>
-              <a href="#" class="text red"> See more</a>
+              <a href="Business" class="text red"> See more</a>
             </div>
           </div>
         </section>

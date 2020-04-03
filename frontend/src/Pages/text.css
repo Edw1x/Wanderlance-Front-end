@@ -19,6 +19,7 @@ body {
   margin: 20px auto 0 auto;
   box-shadow: 5px 5px 115px -14px black;
   border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 .movie-img {
@@ -86,6 +87,13 @@ body {
 .text-movie-cont {
   padding: 0px 12px;
   text-align: justify;
+}
+
+.menu {
+  position: absolute;
+  right: 12px;
+  top: 6px;
+  z-index: 999;
 }
 
 .menu-bor {
@@ -170,6 +178,8 @@ h6 {
   font-weight: 400;
   color: #c42034;
   position: relative;
+  top: -2.4rem;
+  left: -0.3rem;
 }
 
 .red {

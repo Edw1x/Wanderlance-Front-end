@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./ourseller.css";
-export default class UserCard extends Component {
+export default class OurSeller extends Component {
   render() {
     return (
       <div>
@@ -9,7 +9,7 @@ export default class UserCard extends Component {
             class="fir-imageover"
             rel="noopener"
             target="_blank"
-            href="https://twitter.com/_davideast"
+            href="/userProfile"
           >
             <img
               class="fir-author-image fir-clickcircle"
@@ -24,11 +24,8 @@ export default class UserCard extends Component {
           </a>
 
           <figcaption>
-            <div class="fig-author-figure-title txt">Igor Chaikovskiy</div>
-            <div class="fig-author-figure-title red txt">
-              in company thince october 12.
-            </div>
-            <div class="fig-author-figure-title txt small">
+          <div class="fig-author-figure-title txt red">Igor Chaikovskiy</div>
+            <div class="small grey">
               Last seen 10 min ago
             </div>
           </figcaption>

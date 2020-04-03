@@ -6,7 +6,7 @@ import CarouselBox from "../Components/CarouselBox";
 import Ourseller from "../Components/OurSeller";
 import Categories from "../Components/Categories";
 
-export default class Sellers extends Component {
+export default class DigitalMarketing extends Component {
   render() {
     return (
       <div>
@@ -39,32 +39,11 @@ export default class Sellers extends Component {
           </div>
           <div class="">
             <section id="video" className="section bg-grey mg-top">
-              <h1-1>Best sellers in Graphics & Design</h1-1>
+              <h1-1>Digital Marketing</h1-1>
             </section>
             <CarouselBox />
-            <section id="video" className="section bg-grey mg-top">
-              <h1-1>Best sellers in Digital Marketing</h1-1>
-            </section>
             <CarouselBox />
-            <section id="video" className="section bg-grey mg-top">
-              <h1-1>Best sellers in Writing & Translation</h1-1>
-            </section>
             <CarouselBox />
-            <section id="video" className="section bg-grey mg-top">
-              <h1-1>Best sellers in Video & Animation</h1-1>
-            </section>
-            <CarouselBox />
-            <section id="video" className="section bg-grey mg-top">
-              <h1-1>Best sellers in Music & Audio</h1-1>
-            </section>
-            <CarouselBox />
-            <section id="video" className="section bg-grey mg-top">
-              <h1-1>Best sellers in Programming & Tech</h1-1>
-            </section>
-            <CarouselBox />
-            <section id="video" className="section bg-grey mg-top">
-              <h1-1>Best sellers in Business</h1-1>
-            </section>
             <CarouselBox />
           </div>
         </section>

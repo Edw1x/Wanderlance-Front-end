@@ -77,7 +77,6 @@ export default class background extends Component {
             <h4 className="text-center text">
               45 million sellers with us now. Zero ads.
             </h4>
-            <CarouselBox/>
             <div class="container row col">
               <div class="cellphone-container">
                 <div class="movie">
