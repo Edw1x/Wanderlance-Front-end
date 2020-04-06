@@ -160,7 +160,7 @@ export default class Header extends Component {
               <Nav className="mr-auto">
                 <Nav.Link href="/"> Home </Nav.Link>
                 <Nav.Link href="/about"> About </Nav.Link>
-                <Nav.Link href="/categories"> Categories </Nav.Link>
+                <Nav.Link href="/sellers"> Sellers </Nav.Link>
                 <Nav.Link href="https://edw1x.github.io/Lab1/?#/contacts">
                   {" "}
                   Contacts{" "}
@@ -182,7 +182,7 @@ export default class Header extends Component {
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/test" component={Test} />
-            <Route exact path="/categories" component={sellers} />
+            <Route exact path="/sellers" component={sellers} />
             <Route exact path="/userProfile" component={userProfile} />
             <Route exact path="/categories/GraphicsandDesign" component={GraphicsAndDesign} />
             <Route exact path="/categories/DigitalMarketing" component={DigitalMarketing} />
@@ -191,7 +191,7 @@ export default class Header extends Component {
             <Route exact path="/categories/ProgrammingAndTech" component={ProgrammingAndTech} />
             <Route exact path="/categories/VideoAndAnimation" component={VideoAndAnimation} />
             <Route exact path="/categories/WritingAndTranslation" component={WritingAndTranslation} />
-            <Route exact path="/sellerspage/:id" component={sellerspage} />
+            <Route exact path="/sellerspage" component={sellerspage} />
             <Route exact path="/resetpassword" component={resetpassword} />
             <Route exact path="/resetpasswordConfirm" component={resetpasswordConfirm} />
           </Switch>
