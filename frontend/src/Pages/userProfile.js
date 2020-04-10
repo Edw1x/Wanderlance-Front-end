@@ -7,7 +7,7 @@ const userData = localStorage.getItem("User");
 const data = JSON.parse(userData);
 const token = localStorage.getItem('Token');
 let isLogined = token ? true : false;
-
+const url = "http://localhost:8000/media"
 
 export default class userProfile extends Component {
 
@@ -21,7 +21,8 @@ export default class userProfile extends Component {
       last_name: "",
       last_login: null,
       date_joined: null,
-      fetched: false
+      fetched: false,
+      image: null
     };
   }
 
@@ -47,7 +48,7 @@ componentWillMount(){
               <div class="photo-left">
                 <img
                   class="photo"
-                  src="https://picsum.photos/200/150/?random"
+                  src={url + this.state.image}
                 />
               </div>
               <div>

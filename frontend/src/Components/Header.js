@@ -27,7 +27,7 @@ const token = localStorage.getItem('Token');
 let isLogined = token ? true : false;
 const userData = localStorage.getItem("User");
 const data = JSON.parse(userData);
-
+const url = "http://localhost:8000/media"
 
 function LogedinUser(props){
   return(
@@ -46,12 +46,12 @@ function LogedinUser(props){
                     >
                       <img
                         class="fir-author-image fir-clickcircle fir-circle"
-                        src="https://picsum.photos/200/150/?random"
+                        src={props.img}
                       />
                       <div class="fir-imageover-color"></div>
                       <img
                         class="fir-imageover-image fir-clickcircle fir-circle"
-                        src="https://picsum.photos/200/150/?random"
+                        src={props.img}
                       />
                     </a>
                   </figure>
@@ -67,12 +67,12 @@ function LogedinUser(props){
                       >
                         <img
                           class="fir-author-image fir-clickcircle fir-margin"
-                          src="https://picsum.photos/200/150/?random"
+                          src={props.img}
                         />
                         <div class="fir-imageover-color"></div>
                         <img
                           class="fir-imageover-image fir-clickcircle fir-margin"
-                          src="https://picsum.photos/200/150/?random"
+                          src={props.img}
                         />
                       </a>
 
@@ -127,7 +127,8 @@ export default class Header extends Component {
       last_name: "",
       last_login: null,
       date_joined: null,
-      fetched: false
+      fetched: false,
+      image: null
     };
   }
 
@@ -160,8 +161,9 @@ export default class Header extends Component {
         }
       }).then(res => res.json()).then(data => {
         console.log(data);
-        this.setState(data);
+        this.setState(data.user);
         this.setState({ fetched: true });
+        this.setState({image: data.image.image});
         console.log(this.state);
         let user = JSON.stringify(this.state);
         localStorage.setItem("User",user);
@@ -197,7 +199,11 @@ export default class Header extends Component {
                 </Nav.Link>
                 <Nav.Link href="/login"> Login </Nav.Link>
               </Nav>
-              {isLogined && this.state.fetched ? <LogedinUser first_name={this.state.first_name} last_name={this.state.last_name} logOutClick={this.logOut}/>:isLogined?<p></p>:                <div className="cA">
+              {isLogined && this.state.fetched ? <LogedinUser 
+              first_name={this.state.first_name} 
+              last_name={this.state.last_name} 
+              logOutClick={this.logOut}
+              img = {url + this.state.image}/>:isLogined?<p></p>:                <div className="cA">
                   <button type="submit" onClick={event =>  window.location.href='/login'}>Click here to enter your account</button>
                 </div>}
             </Navbar.Collapse>
