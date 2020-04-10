@@ -2,7 +2,37 @@ import React, { Component } from "react";
 import { Tabs, Tab} from "react-bootstrap";
 import "./userprofile.css";
 import UserCard from "../Components/UserCard";
-export default class ResetpasswordConfirm extends Component {
+
+const userData = localStorage.getItem("User");
+const data = JSON.parse(userData);
+const token = localStorage.getItem('Token');
+let isLogined = token ? true : false;
+
+
+export default class userProfile extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      id: null,
+      username: "",
+      first_name: "",
+      last_name: "",
+      last_login: null,
+      date_joined: null,
+      fetched: false
+    };
+  }
+
+componentWillMount(){
+  if(!isLogined){
+    this.props.history.push('/');
+  }
+  this.setState(data);
+}
+
+
   render() {
     return (
       <div class="cnt">
@@ -21,7 +51,7 @@ export default class ResetpasswordConfirm extends Component {
                 />
               </div>
               <div>
-                <h4 class="name txt">Igor Chaikovskiy</h4>
+    <h4 class="name txt"> {this.state.first_name} {this.state.last_name}</h4>
               </div>
               <p class="desc txt">
                 I am the best 

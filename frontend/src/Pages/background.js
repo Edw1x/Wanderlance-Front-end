@@ -7,6 +7,8 @@ import CarouselBox from "../Components/CarouselBox";
 import Infocards from "../Components/Infocards";
 import Ourseller from "../Components/OurSeller";
 import Categories from "../Components/Categories";
+import Accordion from "../Components/Accordion";
+import Footer from "../Components/Footer";
 
 export default class background extends Component {
   render() {
@@ -442,145 +444,28 @@ export default class background extends Component {
         {/* Gift Card Section */}
         <section id="gift-cards" className="section bg-grey">
           <div className="container">
+          <h2> F. A. Q. </h2>
+          <Accordion/>
             <div className="gift-cards">
               <div>
                 <img
-                  src="https://images.pexels.com/photos/3530056/pexels-photo-3530056.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                  alt=""
+                  src="https://images.pexels.com/photos/4031867/pexels-photo-4031867.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt="domoi"
                 />
               </div>
               <div>
-                <h2>Brand new discounts </h2>
-                <p className="red">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Neque expedita tempore quasi omnis a aut et totam illo fuga
-                  accusamus dolorum vero, ut harum consectetur. Minima molestias
-                  officiis culpa non sed dicta itaque. Et aliquam illo obcaecati
-                  molestias veritatis porro. Lorem ipsum dolor, sit amet
-                  consectetur adipisicing elit. Neque expedita tempore quasi
-                  omnis a aut et totam illo fuga accusamus dolorum vero, ut
-                  harum consectetur. Minima molestias officiis culpa non sed
-                  dicta itaque. Et aliquam illo obcaecati molestias veritatis
-                  porro. Lorem ipsum dolor, sit amet consectetur adipisicing
-                  elit. Neque expedita tempore quasi omnis a aut et totam illo
-                  fuga accusamus dolorum vero, ut harum consectetur. Minima
-                  molestias officiis culpa non sed dicta itaque. Et aliquam illo
-                  obcaecati molestias veritatis porro. Lorem ipsum dolor, sit
-                  amet consectetur adipisicing elit. Neque expedita tempore
-                  quasi omnis a aut et totam illo fuga accusamus dolorum vero,
-                  ut harum consectetur. Minima molestias officiis culpa non sed
-                  dicta itaque. Et aliquam illo obcaecati molestias veritatis
-                  porro. Lorem ipsum dolor, sit amet consectetur adipisicing
-                  elit. Neque expedita tempore quasi omnis a aut et totam illo
-                  fuga accusamus dolorum vero, ut harum consectetur. Minima
-                  molestias officiis culpa non sed dicta itaque. Et aliquam illo
-                  obcaecati molestias veritatis porro. Lorem ipsum dolor, sit
-                  amet consectetur adipisicing elit. Neque expedita tempore
-                  quasi omnis a aut et totam illo fuga accusamus dolorum vero,
-                  ut harum consectetur. Minima molestias officiis culpa non sed
-                  dicta itaque. Et aliquam illo obcaecati molestias veritatis
-                  porro. Lorem ipsum dolor, sit amet consectetur adipisicing
-                  elit. Neque expedita tempore quasi omnis a aut et totam illo
-                  fuga accusamus dolorum vero, ut harum consectetur. Minima
-                  molestias officiis culpa non sed dicta itaque. Et aliquam illo
-                  obcaecati molestias veritatis porro. Lorem ipsum dolor, sit
-                  amet consectetur adipisicing elit. Neque expedita tempore
-                  quasi omnis a aut et totam illo fuga accusamus dolorum vero,
-                  ut harum consectetur. Minima molestias officiis culpa non sed
-                  dicta itaque. Et aliquam illo obcaecati molestias veritatis
-                  porro.
-                </p>
-                <p className="grey">Already have an discount?</p>
-                <hr />
-                <a href="#" className="text-secondary ">
-                  <i className="fas fa-chevron-right red" /> Redeem
-                </a>
+                <div>
+                <img
+                  src="https://images.pexels.com/photos/4031867/pexels-photo-4031867.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt="domoi"
+                />
+              </div>
               </div>
             </div>
           </div>
         </section>
         {/* Footer */}
-        <footer className="back">
-          <div className="container grey">
-            <div className="footer-cols">
-              <ul>
-                <li>Shop &amp; Learn</li>
-                <li>
-                  <a href="#">Music</a>
-                </li>
-                <li>
-                  <a href="#">Movies</a>
-                </li>
-                <li>
-                  <a href="#">Shows</a>
-                </li>
-                <li>
-                  <a href="#">Apps</a>
-                </li>
-                <li>
-                  <a href="#">Gift Cards</a>
-                </li>
-              </ul>
-              <ul>
-                <li>Orange Store</li>
-                <li>
-                  <a href="#">Find a Store</a>
-                </li>
-                <li>
-                  <a href="#">Today at Orange</a>
-                </li>
-                <li>
-                  <a href="#">Orange Camp</a>
-                </li>
-                <li>
-                  <a href="#">Financing</a>
-                </li>
-                <li>
-                  <a href="#">Order Status</a>
-                </li>
-              </ul>
-              <ul>
-                <li>Education &amp; Business</li>
-                <li>
-                  <a href="#">Orange &amp; Education</a>
-                </li>
-                <li>
-                  <a href="#">Shop For College</a>
-                </li>
-                <li>
-                  <a href="#">Orange &amp; Business</a>
-                </li>
-                <li>
-                  <a href="#">Shop For Business</a>
-                </li>
-                <li>
-                  <a href="#">Jobs</a>
-                </li>
-              </ul>
-              <ul>
-                <li>About Orange</li>
-                <li>
-                  <a href="#">Newsroom</a>
-                </li>
-                <li>
-                  <a href="#">Orange Leadership</a>
-                </li>
-                <li>
-                  <a href="#">Investors</a>
-                </li>
-                <li>
-                  <a href="#">Events</a>
-                </li>
-                <li>
-                  <a href="#">Contact Orange</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="footer-bottom text-center txt grey">
-            Copyright © 2020 WanderLance Team
-          </div>
-        </footer>
+        <Footer/>
       </div>
     );
   }

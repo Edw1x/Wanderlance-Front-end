@@ -25,6 +25,10 @@ import "./header.css";
 
 const token = localStorage.getItem('Token');
 let isLogined = token ? true : false;
+const userData = localStorage.getItem("User");
+const data = JSON.parse(userData);
+
+
 function LogedinUser(props){
   return(
     <div class="btn-group rounded-circle size red ">
@@ -104,7 +108,7 @@ function LogedinUser(props){
                     Balance: <span className="txt moneyColor">1000$</span>
                   </a>
                   <div class="dropdown-divider"></div>
-                  <a href="#" /*onClick={localStorage.removeItem('Token')}*/ class="dropdown-item colorLink">
+                  <a href="#" onClick={props.logOutClick} class="dropdown-item colorLink">
                     <i class="fa fa-sign-out iconRed" aria-hidden="true"></i>
                     Log out
                   </a>
@@ -127,9 +131,27 @@ export default class Header extends Component {
     };
   }
 
+  logOut = (e) => {
+    e.preventDefault();
+    fetch('http://localhost:8000/auth/logout/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Token ${token}`,
+      }
+    }).then(res => {
+      localStorage.removeItem("Token");
+      localStorage.removeItem("User");
+      window.location.reload(false);
+      return res.json();
+
+    });
+
+  }
 
   componentDidMount() {
-    if (isLogined) {
+
+    if (isLogined && !userData) {
       fetch('http://localhost:8000/auth/me/', {
         method: 'GET',
         headers: {
@@ -139,9 +161,17 @@ export default class Header extends Component {
       }).then(res => res.json()).then(data => {
         console.log(data);
         this.setState(data);
-        this.setState({fetched: true});
+        this.setState({ fetched: true });
         console.log(this.state);
+        let user = JSON.stringify(this.state);
+        localStorage.setItem("User",user);
       })
+    }
+    else if(isLogined && userData){
+      console.log(data);
+      this.setState(data);
+      this.setState({ fetched: true });
+      console.log(this.state);
     }
   }
   render() {
@@ -167,7 +197,7 @@ export default class Header extends Component {
                 </Nav.Link>
                 <Nav.Link href="/login"> Login </Nav.Link>
               </Nav>
-              {isLogined && this.state.fetched ? <LogedinUser first_name={this.state.first_name} last_name={this.state.last_name}/>:isLogined?<p></p>:                <div className="cA">
+              {isLogined && this.state.fetched ? <LogedinUser first_name={this.state.first_name} last_name={this.state.last_name} logOutClick={this.logOut}/>:isLogined?<p></p>:                <div className="cA">
                   <button type="submit" onClick={event =>  window.location.href='/login'}>Click here to enter your account</button>
                 </div>}
             </Navbar.Collapse>
