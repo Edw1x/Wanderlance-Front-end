@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Tabs, Tab} from "react-bootstrap";
 import "./userprofile.css";
 import UserCard from "../Components/UserCard";
+import ImageUploader from "../Components/ImageUploader"
 
 const userData = localStorage.getItem("User");
 const data = JSON.parse(userData);
@@ -30,7 +31,23 @@ componentWillMount(){
   if(!isLogined){
     this.props.history.push('/');
   }
-  this.setState(data);
+}
+componentDidMount(){
+  fetch('http://localhost:8000/auth/me/', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Token ${token}`,
+    }
+  }).then(res => res.json()).then(data => {
+    console.log(data);
+    this.setState(data.user);
+    this.setState({ fetched: true });
+    this.setState({image: data.image.image});
+    console.log(this.state);
+    let user = JSON.stringify(this.state);
+    localStorage.setItem("User",user);
+  })
 }
 
 
@@ -40,7 +57,9 @@ componentWillMount(){
         <header>
           <div className="report right">
             <button type="submit">report</button>
+            
             </div>
+            <ImageUploader/>
         </header>
         <main>
           <div class="">
@@ -48,7 +67,7 @@ componentWillMount(){
               <div class="photo-left">
                 <img
                   class="photo"
-                  src={url + this.state.image}
+                  src={this.state.image?url + this.state.image:""}
                 />
               </div>
               <div>
