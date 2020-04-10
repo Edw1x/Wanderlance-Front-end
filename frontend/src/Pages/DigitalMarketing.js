@@ -31,11 +31,31 @@ export default class DigitalMarketing extends Component {
           <h1 class="header-title"></h1>
         </section>
         <section id="music" className="section back">
-          <div style={{color: 'white'}} className="text-center">
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-google-plus-square"></i>
-            <i class="fab fa-facebook-square"></i>
-            <i class="fas fa-share-alt-square"></i>
+        <div style={{ color: "white" }} className="text-center">
+            <div class="btn-group cA">
+              <button
+                type="button"
+                class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Sort by
+              </button>
+              <div class="dropdown-menu">
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item colorLink">
+                  Price
+                </a>
+                <a href="#" class="dropdown-item colorLink">
+                  Rating
+                </a>
+                <a href="#" class="dropdown-item colorLink">
+                  Date
+                </a>
+                <div class="dropdown-divider"></div>
+              </div>
+            </div>
           </div>
           <div class="">
             <section id="video" className="section bg-grey mg-top">
