@@ -7,76 +7,69 @@ export default class Footer extends Component {
         <div className="container grey">
           <div className="footer-cols">
             <ul>
-              <li>Shop &amp; Learn</li>
+              <li>Make your choise</li>
               <li>
-                <a href="#">Music</a>
+                <a href="#">Explore the sea of products</a>
               </li>
               <li>
-                <a href="#">Movies</a>
+                <a href="#">Make your own product</a>
               </li>
               <li>
-                <a href="#">Shows</a>
+                <a href="#">Find any proposition</a>
               </li>
               <li>
-                <a href="#">Apps</a>
+                <a href="#">Communicate with sellers</a>
+              </li>
+
+            </ul>
+            
+            <ul>
+              <li>Community</li>
+              <li>
+                <a href="#">Our blog</a>
               </li>
               <li>
-                <a href="#">Gift Cards</a>
+                <a href="#">Last news</a>
               </li>
+              <li>
+                <a href="#">Facebook</a>
+              </li>
+              <li>
+                <a href="#">Instagram</a>
+              </li>
+
             </ul>
             <ul>
-              <li>Orange Store</li>
+              <li>About us</li>
               <li>
-                <a href="#">Find a Store</a>
+                <a href="#">Contact us</a>
               </li>
               <li>
-                <a href="#">Today at Orange</a>
+                <a href="#">Usefull links</a>
               </li>
               <li>
-                <a href="#">Orange Camp</a>
+                <a href="#">Support us</a>
               </li>
               <li>
-                <a href="#">Financing</a>
-              </li>
-              <li>
-                <a href="#">Order Status</a>
+                <a href="#">F.A.Q.</a>
               </li>
             </ul>
+
             <ul>
-              <li>Education &amp; Business</li>
+              <li>Others</li>
               <li>
-                <a href="#">Orange &amp; Education</a>
+                <a href="#">Terms</a>
               </li>
               <li>
-                <a href="#">Shop For College</a>
+                <a href="#">Privacy</a>
               </li>
               <li>
-                <a href="#">Orange &amp; Business</a>
+                <a href="#">Help</a>
               </li>
               <li>
-                <a href="#">Shop For Business</a>
+                <a href="#">Accessibility</a>
               </li>
-              <li>
-                <a href="#">Jobs</a>
-              </li>
-            </ul>
-            <ul>
-              <li>About Orange</li>
-              <li>
-                <a href="#">Newsroom</a>
-              </li>
-              <li>
-                <a href="#">Orange Leadership</a>
-              </li>
-              <li>
-                <a href="#">Investors</a>
-              </li>
-              <li>
-                <a href="#">Events</a>
-              </li>
-              <li>
-                <a href="#">Contact Orange</a>
-              </li>
+
             </ul>
           </div>
         </div>
