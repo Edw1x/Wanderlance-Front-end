@@ -4,9 +4,8 @@ import "./userprofile.css";
 import UserCard from "../Components/UserCard";
 import ImageUploader from "../Components/ImageUploader"
 
-const userData = localStorage.getItem("User");
-const data = JSON.parse(userData);
 const token = localStorage.getItem('Token');
+const user = localStorage.getItem("User");
 let isLogined = token ? true : false;
 const url = "http://localhost:8000/media"
 
@@ -33,6 +32,7 @@ componentWillMount(){
   }
 }
 componentDidMount(){
+  if(!user)
   fetch('http://localhost:8000/auth/me/', {
     method: 'GET',
     headers: {
@@ -45,9 +45,10 @@ componentDidMount(){
     this.setState({ fetched: true });
     this.setState({image: data.image.image});
     console.log(this.state);
-    let user = JSON.stringify(this.state);
-    localStorage.setItem("User",user);
   })
+  else{
+    this.setState(JSON.parse(user));
+  }
 }
 
 

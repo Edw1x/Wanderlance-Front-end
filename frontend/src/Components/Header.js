@@ -25,8 +25,6 @@ import "./header.css";
 
 const token = localStorage.getItem('Token');
 let isLogined = token ? true : false;
-const userData = localStorage.getItem("User");
-const data = JSON.parse(userData);
 const url = "http://localhost:8000/media"
 
 function LogedinUser(props){
@@ -152,7 +150,7 @@ export default class Header extends Component {
 
   componentDidMount() {
 
-    if (isLogined && !userData) {
+    if (isLogined) {
       fetch('http://localhost:8000/auth/me/', {
         method: 'GET',
         headers: {
@@ -164,16 +162,9 @@ export default class Header extends Component {
         this.setState(data.user);
         this.setState({ fetched: true });
         this.setState({image: data.image.image});
+        localStorage.setItem("User", JSON.stringify(this.state));
         console.log(this.state);
-        let user = JSON.stringify(this.state);
-        localStorage.setItem("User",user);
       })
-    }
-    else if(isLogined && userData){
-      console.log(data);
-      this.setState(data);
-      this.setState({ fetched: true });
-      console.log(this.state);
     }
   }
   render() {

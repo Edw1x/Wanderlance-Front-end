@@ -29,7 +29,7 @@ export default class ImageUploader extends Component {
         fd.append('user', this.state.user);
         fd.append('image', this.state.image);
         e.preventDefault();
-
+        if(this.state.image)
         fetch('http://localhost:8000/media/upload/', {
             method: 'POST',
             headers: {
@@ -37,19 +37,7 @@ export default class ImageUploader extends Component {
             },
             body: fd
         }).then(res => {
-            // fetch('http://localhost:8000/auth/me/', {
-            //     method: 'GET',
-            //     headers: {
-            //         'Content-Type': 'application/json',
-            //         'Authorization': `Token ${token}`,
-            //     }
-            // }).then(res => res.json()).then(data => {
-            //     this.setState({refreshdata: data.user});
-            //     this.setState({refreshdata:{image: data.image.image}});
-            //     let user = JSON.stringify(this.state.refreshdata);
-            //     localStorage.setItem("User", user);
-            // })
-          
+            localStorage.removeItem("User");
             window.location.reload(false)
             return res.json()
         });
