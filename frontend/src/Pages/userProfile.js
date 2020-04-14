@@ -3,6 +3,7 @@ import { Tabs, Tab} from "react-bootstrap";
 import "./userprofile.css";
 import UserCard from "../Components/UserCard";
 import ImageUploader from "../Components/ImageUploader"
+import Review from "../Components/Review.js";
 
 const token = localStorage.getItem('Token');
 const user = localStorage.getItem("User");
@@ -60,7 +61,6 @@ componentDidMount(){
             <button type="submit">report</button>
             
             </div>
-            <ImageUploader/>
         </header>
         <main>
           <div class="">
@@ -98,7 +98,11 @@ componentDidMount(){
                 <p>cook</p>
                 </Tab>
                 <Tab eventKey="contact" title="Reviews" className="">
-                <p>wook</p>
+                <div className="reviews">
+              <Review />
+              <Review />
+              <Review />
+            </div>
                 </Tab>
               </Tabs>
             </div>

@@ -788,12 +788,10 @@ textarea {
   line-height: 150%;
   border-radius: 5px;
   background-color: #1e1b26;
-  border: 1px solid #06f;
   height: 130px;
   resize: none;
   width: 100%;
   color: #c42034;
-  box-shadow: #000 0 -1px 7px 1px, inset #006 0 -1px 9px, #06f 0 2px 12px;
 }
 
 

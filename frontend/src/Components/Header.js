@@ -21,6 +21,7 @@ import sellers from "../Pages/Sellers";
 import sellerspage from "../Pages/SellersPage";
 import resetpassword from "../Pages/Resetpassword";
 import resetpasswordConfirm from "../Pages/ResetpasswordConfirm";
+import settings from "../Pages/Settings";
 import "./header.css";
 
 const token = localStorage.getItem('Token');
@@ -97,7 +98,7 @@ function LogedinUser(props){
                     <i class="fa fa-comment iconRed" aria-hidden="true"></i>
                     Messages
                   </a>
-                  <a href="#" class="dropdown-item colorLink">
+                  <a href="/userProfile/settings" class="dropdown-item colorLink">
                     <i class="fa fa-cog iconRed" aria-hidden="true"></i>
                     Settings
                   </a>
@@ -191,7 +192,7 @@ export default class Header extends Component {
                 <Nav.Link href="/login"> Login </Nav.Link>
               </Nav>
               {isLogined && this.state.fetched ? <LogedinUser 
-              first_name={this.state.first_name} 
+              first_name={this.state.username} 
               last_name={this.state.last_name} 
               logOutClick={this.logOut}
               img = {url + this.state.image}/>:isLogined?<p></p>:                <div className="cA">
@@ -221,6 +222,7 @@ export default class Header extends Component {
             <Route exact path="/sellerspage" component={sellerspage} />
             <Route exact path="/resetpassword" component={resetpassword} />
             <Route exact path="/resetpasswordConfirm" component={resetpasswordConfirm} />
+            <Route exact path="/userProfile/settings" component={settings} />
           </Switch>
         </BrowserRouter>
       </>

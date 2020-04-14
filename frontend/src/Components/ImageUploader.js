@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "./imageuploader.css";
 const token = localStorage.getItem('Token');
 const userData = localStorage.getItem("User");
 const data = JSON.parse(userData);
@@ -59,11 +59,10 @@ export default class ImageUploader extends Component {
 
     render() {
         return (
-            <div className="previewComponent cA">
+            <div className="previewComponent cA cAlabel">
                 <form onSubmit={(e) => this._handleSubmit(e)}>
-                    <input className="fileInput "
-                        type="file"
-                        onChange={(e) => this._handleImageChange(e)} />
+                    <input type="file" name="file" id="file" class="inputfile" onChange={(e) => this._handleImageChange(e)} />
+                    <label for="file">Choose a file</label>
                     <button className="submitButton"
                         type="submit"
                         onClick={(e) => this._handleSubmit(e)}>Upload Image</button>
