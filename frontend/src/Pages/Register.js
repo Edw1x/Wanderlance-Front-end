@@ -64,8 +64,8 @@ class App extends Component {
         }
         return response.json();
       }).then(data => {
-        console.log(data);
-        this.setState({resp: data.detail});
+        console.log(data); 
+        data.detail?this.setState({resp: data.detail}):this.setState({resp: data.username});
         console.log(this.state.resp);
       })
 
