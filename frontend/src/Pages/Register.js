@@ -36,38 +36,43 @@ class App extends Component {
         password: "",
         email: "",
         password2: "",
-        resp: ""
-      }
+      },
+      resp: ""
     };
   }
 
 
-   
-  handleSubmit = async e => {
+
+  handleSubmit = e => {
     e.preventDefault();
 
 
-        if(formValid(this.state)){  
-    let response = await fetch('http://127.0.0.1:8000/auth/register/', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
+    if (formValid(this.state)) {
+      fetch('http://127.0.0.1:8000/auth/register/', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
 
-      },
-      body: JSON.stringify(this.state)
-     
-    });
-    console.log(response.status);
-    this.state.formErrors.resp = response.status;
-    console.log(this.state.formErrors.resp);
-    if(response.ok){
-      this.props.history.push("/");
+        },
+        body: JSON.stringify(this.state)
+
+      }).then(response => {
+        console.log(response.status);
+        if (response.ok) {
+          this.props.history.push("/");
+        }
+        return response.json();
+      }).then(data => {
+        console.log(data);
+        this.setState({resp: data.detail});
+        console.log(this.state.resp);
+      })
+
     }
-  }
 
   };
- 
+
   handleChange = e => {
     e.preventDefault();
     const { name, value } = e.target;
@@ -84,14 +89,14 @@ class App extends Component {
           : "invalid email address";
         break;
       case "password":
-          formErrors.password =
-            value.length < 8 ? "minimum 8 characaters required" : "";
-          formErrors.password2 =
-          value !== this.state.password2? "paswords dont match" : "";
-          break;
+        formErrors.password =
+          value.length < 8 ? "minimum 8 characaters required" : "";
+        formErrors.password2 =
+          value !== this.state.password2 ? "paswords dont match" : "";
+        break;
       case "password2":
         formErrors.password2 =
-           value !== this.state.password? "paswords dont match" : "";
+          value !== this.state.password ? "paswords dont match" : "";
         break;
       default:
         break;
@@ -137,11 +142,11 @@ class App extends Component {
                   name="email"
                   noValidate
                   onChange={this.handleChange}
-                />  
+                />
                 {formErrors.email.length > 0 && (
                   <span className="errorMessage red">{formErrors.email}</span>
                 )}
-             
+
               </div>
               <div className="email">
                 <label htmlFor="email">Password</label>
@@ -152,13 +157,13 @@ class App extends Component {
                   name="password"
                   noValidate
                   onChange={this.handleChange}
-                />   
+                />
                 {formErrors.password.length > 0 && (
                   <span className="errorMessage red">
                     {formErrors.password}
                   </span>
                 )}
-              
+
               </div>
               <div className="password">
                 <label htmlFor="password">Repeat Password</label>
@@ -177,9 +182,14 @@ class App extends Component {
                 )}
               </div>
               <div className="createAccount grey">
-              <button type="submit">Create account</button>
-              <div className="grey">
-              </div>
+                <button type="submit">Create account</button>
+                <div className="grey">
+                </div>
+                {this.state.resp && (
+                  <span className="errorMessage red">
+                    {this.state.resp}
+                  </span>
+                )}
                 <div class="popup" id="popup">
                   <div class="popup-inner">
                     <div class="popup__text">
