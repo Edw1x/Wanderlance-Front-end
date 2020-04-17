@@ -5,7 +5,7 @@ import ImageUploader from "../Components/ImageUploader"
 const token = localStorage.getItem('Token');
 const user = localStorage.getItem("User");
 let isLogined = token ? true : false;
-const url = "http://localhost:8000/media"
+const url = "http://localhost:8000/media/images/"
 
 export default class Settings extends Component {
     constructor(props) {
@@ -30,7 +30,7 @@ export default class Settings extends Component {
       }
       componentDidMount(){
         if(!user)
-        fetch('http://localhost:8000/auth/me/', {
+        fetch('http://localhost:8000/users/me/', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

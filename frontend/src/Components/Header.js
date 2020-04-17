@@ -22,11 +22,12 @@ import sellerspage from "../Pages/SellersPage";
 import resetpassword from "../Pages/Resetpassword";
 import resetpasswordConfirm from "../Pages/ResetpasswordConfirm";
 import settings from "../Pages/Settings";
+import confirmedEmail from "../Pages/ConfirmedEmail";
 import "./header.css";
 
 const token = localStorage.getItem('Token');
 let isLogined = token ? true : false;
-const url = "http://localhost:8000/media"
+const url = "http://localhost:8000/media/images/"
 
 function LogedinUser(props){
   return(
@@ -152,7 +153,7 @@ export default class Header extends Component {
   componentDidMount() {
 
     if (isLogined) {
-      fetch('http://localhost:8000/auth/me/', {
+      fetch('http://localhost:8000/users/me/', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -223,6 +224,7 @@ export default class Header extends Component {
             <Route exact path="/resetpassword" component={resetpassword} />
             <Route exact path="/resetpasswordConfirm" component={resetpasswordConfirm} />
             <Route exact path="/userProfile/settings" component={settings} />
+            <Route exact path="/register/:id/:token" component={confirmedEmail} />
           </Switch>
         </BrowserRouter>
       </>
