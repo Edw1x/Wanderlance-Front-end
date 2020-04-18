@@ -162,6 +162,7 @@ export default class Header extends Component {
       }).then(res => res.json()).then(data => {
         console.log(data);
         this.setState(data.user);
+		localStorage.setItem('id', this.state.id);
         this.setState({ fetched: true });
         this.setState({image: data.image.image});
         localStorage.setItem("User", JSON.stringify(this.state));

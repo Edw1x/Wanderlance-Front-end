@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "./imageuploader.css";
 const token = localStorage.getItem('Token');
-const userData = localStorage.getItem("User");
-const data = JSON.parse(userData);
+let userData = localStorage.getItem('User');
+let data = JSON.parse(userData);
+let id = localStorage.getItem('id');
 
 export default class ImageUploader extends Component {
     constructor(props) {
@@ -37,8 +38,10 @@ export default class ImageUploader extends Component {
             },
             body: fd
         }).then(res => {
-            localStorage.removeItem("User");
+			
             window.location.reload(false)
+			localStorage.removeItem('User')
+			console.log(this.state);
             return res.json()
         });
 
@@ -46,17 +49,22 @@ export default class ImageUploader extends Component {
 
     _handleImageChange(e) {
         e.preventDefault();
-
+		
         let file = e.target.files[0];
-
+		
         this.setState({
             image: file,
-            user: data.id
+            user: id
         });
         console.log(this.state);
 
     }
-
+	
+	componentWillMount(){
+		userData = localStorage.getItem('User');
+		data = JSON.parse(userData);
+	}
+	
     render() {
         return (
             <div className="previewComponent cA cAlabel">

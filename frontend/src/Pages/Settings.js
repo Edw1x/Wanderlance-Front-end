@@ -38,11 +38,13 @@ export default class Settings extends Component {
           }
         }).then(res => res.json()).then(data => {
           console.log(data);
+		  if (data.user){
           this.setState(data.user);
           this.setState({ fetched: true });
           this.setState({image: data.image.image});
           console.log(this.state);
-        })
+			}
+		})
         else{
           this.setState(JSON.parse(user));
         }
@@ -211,16 +213,8 @@ export default class Settings extends Component {
     
                                 <form>
                                     <div class="form-group">
-                                        <label for="inputLoginCurrent">Current Login</label>
-                                        <input type="login" class="form-control" id="inputLoginCurrent"/>
-                                    </div>
-                                    <div class="form-group">
                                         <label for="inputLoginNew">New login</label>
                                         <input type="login" class="form-control" id="inputLoginNew"/>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputLoginNew2">Verify login</label>
-                                        <input type="login" class="form-control" id="inputLoginNew2"/>
                                     </div>
                                     <button type="submit" class="btn btn-primary">Save changes</button>
                                 </form>
