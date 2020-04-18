@@ -1,28 +1,7 @@
 import React, { Component } from "react";
 import { Navbar, Nav, Container, Form } from "react-bootstrap";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 
-import Home from "../Pages/Home";
-import About from "../Pages/About";
-import Contacts from "../Pages/Contacts";
-import Register from "../Pages/Register";
-import Login from "../Pages/Login";
-import userProfile from "../Pages/userProfile";
-import Test from "../Pages/Test";
-import GraphicsAndDesign from "../Pages/GraphicsAndDesign";
-import DigitalMarketing from "../Pages/DigitalMarketing";
-import Business from "../Pages/Business";
-import MusicAndAudio from "../Pages/MusicAndAudio";
-import ProgrammingAndTech from "../Pages/ProgrammingAndTech";
-import VideoAndAnimation from "../Pages/VideoAndAnimation";
-import WritingAndTranslation from "../Pages/WritingAndTranslation";
-import background from "../Pages/background";
-import sellers from "../Pages/Sellers";
-import sellerspage from "../Pages/SellersPage";
-import resetpassword from "../Pages/Resetpassword";
-import resetpasswordConfirm from "../Pages/ResetpasswordConfirm";
-import settings from "../Pages/Settings";
-import confirmedEmail from "../Pages/ConfirmedEmail";
 import "./header.css";
 
 const token = localStorage.getItem('Token');
@@ -99,10 +78,10 @@ function LogedinUser(props){
                     <i class="fa fa-comment iconRed" aria-hidden="true"></i>
                     Messages
                   </a>
-                  <a href="/userProfile/settings" class="dropdown-item colorLink">
+                  <Link to="/userProfile/settings" class="dropdown-item colorLink">
                     <i class="fa fa-cog iconRed" aria-hidden="true"></i>
                     Settings
-                  </a>
+                  </Link>
                   <div class="dropdown-divider"></div>
                   <a href="#" class="dropdown-item colorLink">
                     Balance: <span className="txt moneyColor">1000$</span>
@@ -184,14 +163,14 @@ export default class Header extends Component {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mr-auto">
-                <Nav.Link href="/"> Home </Nav.Link>
-                <Nav.Link href="/about"> About </Nav.Link>
-                <Nav.Link href="/sellers"> Sellers </Nav.Link>
-                <Nav.Link href="https://edw1x.github.io/Lab1/?#/contacts">
+              <Link class = "nav-link" to="/"> Home </Link>
+                <Link class = "nav-link" to="/about"> About </Link>
+                <Link class = "nav-link" to="/sellers"> Sellers </Link>
+                <Link class = "nav-link" to="/contacts">
                   {" "}
                   Contacts{" "}
-                </Nav.Link>
-                <Nav.Link href="/login"> Login </Nav.Link>
+                </Link>
+                <Link class = "nav-link" to="/login"> Login </Link>
               </Nav>
               {isLogined && this.state.fetched ? <LogedinUser 
               first_name={this.state.username} 
@@ -203,31 +182,6 @@ export default class Header extends Component {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-
-        <BrowserRouter>
-          <Switch>
-            <Route exact path="/" component={background} />
-            <Route exact path="/about" component={Home} />
-            <Route exact path="/contacts" component={Contacts} />
-            <Route exact path="/register" component={Register} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/test" component={Test} />
-            <Route exact path="/sellers" component={sellers} />
-            <Route exact path="/userProfile" component={userProfile} />
-            <Route exact path="/categories/GraphicsandDesign" component={GraphicsAndDesign} />
-            <Route exact path="/categories/DigitalMarketing" component={DigitalMarketing} />
-            <Route exact path="/categories/Business" component={Business} />
-            <Route exact path="/categories/MusicAndAudio" component={MusicAndAudio} />
-            <Route exact path="/categories/ProgrammingAndTech" component={ProgrammingAndTech} />
-            <Route exact path="/categories/VideoAndAnimation" component={VideoAndAnimation} />
-            <Route exact path="/categories/WritingAndTranslation" component={WritingAndTranslation} />
-            <Route exact path="/sellerspage" component={sellerspage} />
-            <Route exact path="/resetpassword" component={resetpassword} />
-            <Route exact path="/resetpasswordConfirm" component={resetpasswordConfirm} />
-            <Route exact path="/userProfile/settings" component={settings} />
-            <Route exact path="/register/:id/:token" component={confirmedEmail} />
-          </Switch>
-        </BrowserRouter>
       </>
     );
   }
