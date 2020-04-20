@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from "react";
 import { Form } from "react-bootstrap";
-import "./text.css";
+import "../text.css";
 
 const token = localStorage.getItem('Token');
 let isLogined = token ? true : false;
@@ -142,6 +142,12 @@ export default class Login extends Component {
                 </a>
                 </div>
               </div>
+          <div style={{color: 'white'}} className="text-center loginIcons">
+            <i class="fa faf fa-facebook" style = {{width:'90px'}}></i>
+            <i class="fa faf fa-google"></i>
+            <i class="fa faf fa-instagram"></i>
+            <i class="fa faf fa-twitter"></i>
+          </div>
             </form>
           </div>
         </div>

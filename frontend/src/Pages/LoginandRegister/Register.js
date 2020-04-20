@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from "react";
-import "./text.css";
+import "../text.css";
 
 const emailRegex = RegExp(
   /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
@@ -202,7 +202,7 @@ class App extends Component {
                   </div>
                 </div>
                 <div className="grey">
-                  <a href="https://edw1x.github.io/Lab1/?#/register">
+                  <a href="/login">
                     Already have an account? Click here
                   </a>
                 </div>

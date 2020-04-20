@@ -70,6 +70,44 @@ body {
   position: relative;
 }
 
+.faf {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 40px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: rgb(172, 129, 50);
+  color: white;
+}
+
+.fa-google {
+  background: rgb(18, 214, 67);
+  color: white;
+}
+
 .movie {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+39,1e1b26+53&0+38,1+55 */
   background: -moz-linear-gradient(
@@ -455,6 +493,10 @@ h6 {
   font-weight: 400px;
 }
 
+.FooterGrey {
+  background-color: rgba(33, 27, 38, 0.95);
+}
+
 .grey a {
   color: #999;
 }
@@ -492,7 +534,7 @@ h6 {
 }
 
 .wrapper {
-  height: 40vh;
+  height: 50vh;
   width: 800px;
   display: flex;
   flex-direction: column;
@@ -515,6 +557,8 @@ h6 {
   flex-direction: column;
   padding: 20px 40px;
   border-radius: 10px;
+  position: relative;
+  top: -12%;
 }
 
 .formik {
