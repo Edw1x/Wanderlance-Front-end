@@ -19,7 +19,7 @@ export default class Infocards extends Component {
               <i class="material-icons md-36">storefront</i>
             </div>
             <p class="title">Buy</p>
-            <a href="#" class="text">Find any product</a>
+            <a href="/sellers" class="text">Find any product</a>
           </div>
           <div class="card">
             <div class="icon">
@@ -33,7 +33,7 @@ export default class Infocards extends Component {
               <i class="material-icons md-36">explore</i>
             </div>
             <p class="title">Explore</p>
-            <a href="#" class="text">Explore the sea of products</a>
+            <a href="/sellers" class="text">Explore the sea of products</a>
           </div>
         </div>
       </div>
