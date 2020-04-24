@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../home.css";
-import "../text.css";
 import "../sellerbar.css";
 import CarouselBox from "../../Components/CarouselBox";
 import Categories from "../../Components/Categories";
@@ -28,7 +27,7 @@ export default class WritingAndTranslation extends Component {
         <section class="hero">
           <div class="hero-one"></div>
           <div class="hero-two"></div>
-          <h1 class="header-title"></h1>
+          <h1 class="hero-title"></h1>
         </section>
         <section id="music" className="section back">
         <div style={{ color: "white" }} className="text-center">

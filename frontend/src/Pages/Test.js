@@ -3,39 +3,7 @@ import React, { Component } from "react";
 
 import "./home.css";
 import "react-image-gallery/styles/css/image-gallery.css";
-(function() {
-  var displayOnlineStatus = document.getElementById("online-status");
-  console.log("in start funct");
-  var displayLEDStatus = document.getElementById("online-led"),
-    isOnline = function() {
-      displayOnlineStatus.innerHTML = "Online";
-      //displayOnlineStatus.className = "online";
-      displayLEDStatus.className = "led-green";
-    },
-    isOffline = function() {
-      displayOnlineStatus.innerHTML = "Offline";
-      //displayOnlineStatus.className = "offline";
-      displayLEDStatus.className = "led-red-on";
-    };
 
-  if (window.addEventListener) {
-    /*
-            Works well in Firefox and Opera with the 
-            Work Offline option in the File menu.
-            Pulling the ethernet cable doesn't seem to trigger it.
-            Later Google Chrome and Safari seem to trigger it well
-        */
-    window.addEventListener("online", isOnline, false);
-    window.addEventListener("offline", isOffline, false);
-  } else {
-    /*
-			Works in IE with the Work Offline option in the 
-			File menu and pulling the ethernet cable
-		*/
-    document.body.ononline = isOnline;
-    document.body.onoffline = isOffline;
-  }
-})();
 export default class Home extends Component {
   render() {
     return (
@@ -60,7 +28,7 @@ export default class Home extends Component {
             </a>
 
             <figcaption>
-              <div class="fig-author-figure-title txt red">
+              <div class="fig-author-figure-title white-text red">
                 Igor Chaikovskiy
               </div>
               <div class="small grey">Last seen 10 min ago</div>
@@ -115,7 +83,7 @@ export default class Home extends Component {
 
         <div className="mainText">
           <h3>What do you like best?</h3>
-          <p className="txt">
+          <p className="white-text">
             The best thing about using bootstrap is it saving the modern
             developer alot of time, its super easy to use and need only simple
             html knowledge to know how to setup and use it, as a web developer
@@ -127,7 +95,7 @@ export default class Home extends Component {
           </p>
 
           <h3>What do you dislike?</h3>
-          <p className="txt">
+          <p className="white-text">
             I think that the designs can be redundant, however, I believe that
             the websites currently revolve around responsive design, so
             Bootstrap can be a takeoff tool for beginners.
@@ -147,7 +115,7 @@ export default class Home extends Component {
 
             <div class="collapse collapseMg" id="collapseExample">
               <h3>Recommendations to others considering the product:</h3>
-              <p className="txt">
+              <p className="white-text">
                 Bootstrap provides a fascinating visual design, so receptivity
                 to your websites will not be necessary with this framework. My
                 recommendation is to use it and learn as much as possible to
@@ -158,7 +126,7 @@ export default class Home extends Component {
                 What problems are you solving with the product? What benefits
                 have you realized?
               </h3>
-              <p className="txt">
+              <p className="white-text">
                 Bootstrap serves as a composition for testing changes on our
                 mobile websites. We can edit from colors, sizes and buttons of
                 the pages easily. In addition, it also allows us to visually
@@ -174,60 +142,7 @@ export default class Home extends Component {
           <button className="" type="submit" onClick={event =>  window.location.href='/login'}>Add comment</button>
           <button className="" type="submit" onClick={event =>  window.location.href='/login'}>Share</button>
         </div>
-        <div className="createAccount grey">
-        <div className="but">
-          <a href="#popup">Open Modal</a>
         </div>
-        <div class="popup" id="popup">
-          <div class="popup-inner">
-            <div class="popup__text">
-              <ul class="movie-gen block">
-                <li className="col position1"> Yurii Girnuk</li>
-                <figure class="profile position">
-                  <img
-                    src="https://picsum.photos/200/150/?random"
-                    class="profile-avatar"
-                    alt=""
-                  />
-                </figure>
-                <div className="col position2">
-                  <div id="online-led" class="led-green">
-                    <div id="online-status">online</div>
-                  </div>
-                </div>
-                <hr className="new4 col position3" />
-              </ul>
-              <h1>Send a message</h1>
-              <div class="message">
-                <label for="message"></label>
-                <textarea
-                  name="message"
-                  placeholder="I'd like to chat about"
-                  id="message_input"
-                  cols="30"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-              <div className="createAccount ">
-                <button type="submit" className="col position4">
-                  Send
-                </button>
-              </div>
-            </div>
-            <a class="popup__close" href="#">
-              X
-            </a>
-          </div>
-        </div>
-        <div className="grey">
-          <a href="http://localhost:3000/register">
-            Don't have an account? Click here
-          </a>
-        </div>
-      <background/>
-      </div>
-      </div>
       
     );
   }

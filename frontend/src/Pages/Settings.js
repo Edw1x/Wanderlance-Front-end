@@ -51,7 +51,7 @@ export default class Settings extends Component {
       }
     render() {
       return (
-        <div class="container p-0 txt cA">
+        <div class="container p-0 white-text cA">
 
         <h1 class="h3 mb-3">Settings</h1>
     
@@ -130,7 +130,7 @@ export default class Settings extends Component {
                                         </div>
                                     </div>
     
-                                    <button type="submit" class="btn btn-primary">Save changes</button>
+                                    <button type="submit" class="">Save changes</button>
                                 </form>
     
                             </div>
@@ -169,7 +169,7 @@ export default class Settings extends Component {
                                             <input type="text" class="form-control" id="inputLastName" placeholder="Last name"/>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Save changes</button>
+                                    <button type="submit">Save changes</button>
                                 </form>
     
                             </div>
@@ -199,7 +199,7 @@ export default class Settings extends Component {
                                         <label for="inputPasswordNew2">Verify password</label>
                                         <input type="password" class="form-control" id="inputPasswordNew2"/>
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Save changes</button>
+                                    <button type="submit">Save changes</button>
                                 </form>
     
                             </div>
@@ -216,7 +216,7 @@ export default class Settings extends Component {
                                         <label for="inputLoginNew">New login</label>
                                         <input type="login" class="form-control" id="inputLoginNew"/>
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Save changes</button>
+                                    <button type="submit">Save changes</button>
                                 </form>
                             </div>
                         </div>
@@ -234,7 +234,7 @@ export default class Settings extends Component {
                                         <input type="login" class="form-control" id="inputLoginCurrent"/>
                                         <p>Input your login here if you want to delete your account</p>
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Delete</button>
+                                    <button type="submit">Delete</button>
                                 </form>
                             </div>
                         </div>

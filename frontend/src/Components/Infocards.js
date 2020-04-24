@@ -1,7 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from "react";
+
 import "./infocards.css";
+
 export default class Infocards extends Component {
   render() {
     return (

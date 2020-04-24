@@ -72,9 +72,9 @@ componentDidMount(){
                 />
               </div>
               <div>
-    <h4 class="name txt"> {this.state.first_name} {this.state.last_name}</h4>
+    <h4 class="name white-text"> {this.state.first_name} {this.state.last_name}</h4>
               </div>
-              <p class="desc txt">
+              <p class="desc white-text">
                 I am the best 
               </p>
               <div class="social">

@@ -127,3 +127,18 @@
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
+
+.menu {
+  position: absolute;
+  right: 12px;
+  top: 6px;
+  z-index: 999;
+}
+
+.menu-bor {
+  display: block;
+  border: 1px solid #c42034;
+  border-radius: 5px;
+  padding: 1px;
+  width: 54px;
+}

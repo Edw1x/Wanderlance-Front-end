@@ -69,7 +69,7 @@ export default class ImageUploader extends Component {
         return (
             <div className="previewComponent cA cAlabel">
                 <form onSubmit={(e) => this._handleSubmit(e)}>
-                    <input type="file" name="file" id="file" class="inputfile" onChange={(e) => this._handleImageChange(e)} />
+                    <input type="file" except="image/*" name="file" id="file" class="inputfile" onChange={(e) => this._handleImageChange(e)} />
                     <label for="file">Choose a file</label>
                     <button className="submitButton"
                         type="submit"

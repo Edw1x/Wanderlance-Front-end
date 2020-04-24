@@ -24,7 +24,7 @@ export default class ConfirmedEmail extends Component {
   render() {
     return (
       <div> 
-        {this.state.active==400?<div>        <p className="txt text-center">
+        {this.state.active==400?<div>        <p className="white-text text-center">
           Я в своем познании настолько преисполнился, что я как будто бы уже сто
           триллионов миллиардов лет проживаю на триллионах и триллионах таких же
           планет, как эта Земля, мне этот мир абсолютно понятен, и я здесь ищу

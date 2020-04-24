@@ -44,3 +44,56 @@
   margin-top: 8px;
   margin-bottom: 8px;
 }
+
+.navbar-custom {
+  background-color: #15131b;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: #c42034;
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+  color: #c42034;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+  color: red;
+}
+
+.back {
+  background-color: #461221;
+}
+
+.backGrey {
+  background-color: #1e1b26;
+}
+
+.bg-grey {
+  background-color: #1e1b26;
+  text-align: center;
+}
+
+/* card and user hr white */
+hr.white{
+  border: 0.5px solid white;
+}
+
+.red {
+  color: #c42034;
+}
+
+.grey {
+  color: #999;
+  font-weight: 400px;
+}
+
+.grey a {
+  color: #999;
+}
+
+.grey a:hover {
+  color: #c42034;
+}

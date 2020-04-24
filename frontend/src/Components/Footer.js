@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "./footer.css";
 export default class Footer extends Component {
     render() {
       return (
@@ -73,7 +73,7 @@ export default class Footer extends Component {
             </ul>
           </div>
         </div>
-        <div className="footer-bottom text-center txt grey">
+        <div className="footer-bottom text-center white-text grey">
           Copyright © 2020 WanderLance Team
         </div>
       </footer>

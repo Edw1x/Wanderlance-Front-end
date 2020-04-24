@@ -24,7 +24,7 @@ export default class OurSeller extends Component {
           </a>
 
           <figcaption>
-          <div class="fig-author-figure-title txt red">Igor Chaikovskiy</div>
+          <div class="fig-author-figure-title white-text red">Igor Chaikovskiy</div>
             <div class="small grey">
               Last seen 10 min ago
             </div>

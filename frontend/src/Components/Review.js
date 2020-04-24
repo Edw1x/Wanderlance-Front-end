@@ -28,7 +28,7 @@ export default class Review extends Component {
               </a>
   
               <figcaption>
-                <div class="fig-author-figure-title txt red">
+                <div class="fig-author-figure-title white-text red">
                   Igor Chaikovskiy
                 </div>
                 <div class="small grey">Last seen 10 min ago</div>
@@ -83,7 +83,7 @@ export default class Review extends Component {
   
           <div className="mainText">
             <h3>What do you like best?</h3>
-            <p className="txt">
+            <p className="white-text">
               The best thing about using bootstrap is it saving the modern
               developer alot of time, its super easy to use and need only simple
               html knowledge to know how to setup and use it, as a web developer
@@ -95,7 +95,7 @@ export default class Review extends Component {
             </p>
   
             <h3>What do you dislike?</h3>
-            <p className="txt">
+            <p className="white-text">
               I think that the designs can be redundant, however, I believe that
               the websites currently revolve around responsive design, so
               Bootstrap can be a takeoff tool for beginners.
@@ -115,7 +115,7 @@ export default class Review extends Component {
   
               <div class="collapse collapseMg" id="collapseExample">
                 <h3>Recommendations to others considering the product:</h3>
-                <p className="txt">
+                <p className="white-text">
                   Bootstrap provides a fascinating visual design, so receptivity
                   to your websites will not be necessary with this framework. My
                   recommendation is to use it and learn as much as possible to
@@ -126,7 +126,7 @@ export default class Review extends Component {
                   What problems are you solving with the product? What benefits
                   have you realized?
                 </h3>
-                <p className="txt">
+                <p className="white-text">
                   Bootstrap serves as a composition for testing changes on our
                   mobile websites. We can edit from colors, sizes and buttons of
                   the pages easily. In addition, it also allows us to visually

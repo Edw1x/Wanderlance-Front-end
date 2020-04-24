@@ -10,7 +10,6 @@ export default class Contacts extends Component {
           <Form.Group controlId="formBasickEmail">
             <Form.Label> Email address </Form.Label>
             <Form.Control type="email" placeholder="Enter email" />
-            <Form.Text>We dont care about you, fuck you suck dick</Form.Text>
           </Form.Group>
 
           <Form.Group controlId="formBasickPassword">

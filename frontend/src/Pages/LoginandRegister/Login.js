@@ -1,13 +1,13 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from "react";
 import { Form } from "react-bootstrap";
-import "../text.css";
+
+import "./loginANDregister.css";
 
 const token = localStorage.getItem('Token');
 let isLogined = token ? true : false;
 
 export default class Login extends Component {
-
 
   constructor(props) {
     super(props)
@@ -97,12 +97,12 @@ export default class Login extends Component {
   render() {
     return (
       <div className="container px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
-        <div className="wrapper row box">
+        <div className="authWrapper row box">
           <img
-            className="loginimg"
+            className="authImg"
             src="https://images.pexels.com/photos/3530056/pexels-photo-3530056.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
           />
-          <div className="form-wrapper">
+          <div className="form-authWrapper">
             <form onSubmit={this.onSubmit}>
               <h1-1>Log in with email</h1-1>
               <div className="email">
@@ -143,10 +143,10 @@ export default class Login extends Component {
                 </div>
               </div>
           <div style={{color: 'white'}} className="text-center loginIcons">
-            <i class="fa faf fa-facebook" style = {{width:'90px'}}></i>
-            <i class="fa faf fa-google"></i>
-            <i class="fa faf fa-instagram"></i>
-            <i class="fa faf fa-twitter"></i>
+            <i class="fa fa-icon fa-facebook" style = {{width:'90px'}}></i>
+            <i class="fa fa-icon fa-google"></i>
+            <i class="fa fa-icon fa-instagram"></i>
+            <i class="fa fa-icon fa-twitter"></i>
           </div>
             </form>
           </div>

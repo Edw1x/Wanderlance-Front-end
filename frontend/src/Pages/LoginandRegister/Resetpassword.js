@@ -48,7 +48,7 @@ export default class Resetpassword extends Component {
               <Form.Label> Email address </Form.Label>
               <Form.Control type="email" name = "email" onChange={this.handleChange} placeholder="Enter email" />
             </Form.Group>
-            <p className="txt">
+            <p className="white-text">
                  Enter the email so we can send you an email
                 </p>
                 <button type="submit">Reset</button>

@@ -56,7 +56,7 @@ function LogedinUser(props){
                       </a>
 
                       <figcaption>
-                        <div class="fig-author-figure-title txt ">
+                        <div class="fig-author-figure-title white-text ">
                           {props.first_name} {props.last_name}
                         </div>
                       </figcaption>
@@ -84,11 +84,11 @@ function LogedinUser(props){
                   </Link>
                   <div class="dropdown-divider"></div>
                   <a href="#" class="dropdown-item colorLink">
-                    Balance: <span className="txt moneyColor">1000$</span>
+                    Balance: <span className="moneyColor">1000$</span>
                   </a>
                   <div class="dropdown-divider"></div>
                   <a href="#" onClick={props.logOutClick} class="dropdown-item colorLink">
-                    <i class="fa fa-sign-out iconRed" aria-hidden="true"></i>
+                    <i class="fa fa-sign-out-alt iconRed" aria-hidden="true"></i>
                     Log out
                   </a>
                 </div>

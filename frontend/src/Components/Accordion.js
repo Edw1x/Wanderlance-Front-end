@@ -5,7 +5,7 @@ export default class Accordion extends Component {
     render() {
       return (
         <div className = "accordion">
-            <div className = "txt bg-red" id="accordion">
+            <div className = "white-text bg-red" id="accordion">
 
 
             <div class="faqStorage">

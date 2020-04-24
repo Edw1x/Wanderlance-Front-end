@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from "react";
-import "../text.css";
+
+import "./loginANDregister.css";
 
 const emailRegex = RegExp(
   /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
@@ -109,14 +110,14 @@ class App extends Component {
 
     return (
       <div className="container px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
-        <div className="wrapper row">
+        <div className="authWrapper row">
           <img
-            className="loginimg"
+            className="authImg"
             src="https://images.pexels.com/photos/3530056/pexels-photo-3530056.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
           />
-          <div className="form-wrapper">
+          <div className="form-authWrapper">
             <h1-1>Create Account</h1-1>
-            <form className="formik" onSubmit={this.handleSubmit} noValidate>
+            <form onSubmit={this.handleSubmit} noValidate>
               <div className="email">
                 <label htmlFor="firstName">Username</label>
                 <input
@@ -190,17 +191,6 @@ class App extends Component {
                     {this.state.resp}
                   </span>
                 )}
-                <div class="popup" id="popup">
-                  <div class="popup-inner">
-                    <div class="popup__text">
-                      <h1>Thanks for regestration bro</h1>
-                      <p>Go to your email</p>
-                    </div>
-                    <a class="popup__close" href="https://edw1x.github.io/Lab1/?#/login">
-                      X
-                    </a>
-                  </div>
-                </div>
                 <div className="grey">
                   <a href="/login">
                     Already have an account? Click here
