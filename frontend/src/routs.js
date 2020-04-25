@@ -8,6 +8,8 @@ import Home from "./Pages/Home";
 import sellers from "./Pages/Sellers";
 import sellerspage from "./Pages/SellersPage";
 import settings from "./Pages/Settings";
+import myproducts from "./Pages/MyProducts";
+import createproduct from "./Pages/createProduct";
 
 //LoginandRegister
 import Login from "./Pages/LoginandRegister/Login";
@@ -46,6 +48,8 @@ export default class routs extends Component {
             <Route exact path="/resetpassword" component={resetpassword} />
             <Route exact path="/resetpasswordConfirm" component={resetpasswordConfirm} />
             <Route exact path="/userProfile/settings" component={settings} />
+            <Route exact path="/userProfile/myProducts" component={myproducts} />
+            <Route exact path="/userProfile/myProducts/createProduct" component={createproduct} />
           </Switch>
         );
     }

@@ -133,19 +133,19 @@
 
 @keyframes icon3d {
   0% {
-    text-shadow: 5px 4px #1e1b26, -5px -6px #461221;
+    text-shadow: 5px 4px #461221, -5px -6px #461221;
   }
   25% {
-    text-shadow: -5px -6px #1e1b26, 5px 4px #461221;
+    text-shadow: -5px -6px #461221, 5px 4px #461221;
   }
   50% {
-    text-shadow: 5px -4px #1e1b26, -8px 4px #461221;
+    text-shadow: 5px -4px #461221, -8px 4px #461221;
   }
   75% {
-    text-shadow: -8px -4px #1e1b26, -5px -4px #461221;
+    text-shadow: -8px -4px #461221, -5px -4px #461221;
   }
   100% {
-    text-shadow: -5px 0 #1e1b26, 5px -4px #461221;
+    text-shadow: -5px 0 #461221, 5px -4px #461221;
   }
 }
 

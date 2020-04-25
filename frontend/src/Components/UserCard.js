@@ -65,7 +65,7 @@ export default class UserCard extends Component {
               </p>
             </div>
           </div>
-          <div class="mr-grid actors-row">
+          <div class="mr-grid">
             <div class="col1">
               <p class="userCardReviews">15 reviews on this product</p>
             </div>

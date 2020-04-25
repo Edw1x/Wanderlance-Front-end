@@ -55,7 +55,7 @@ export default class userProfile extends Component {
 
   render() {
     return (
-      <div class="cnt">
+      <div class="cnt cardSettings">
         <header>
           <div className="report right">
             <button type="submit">report</button>

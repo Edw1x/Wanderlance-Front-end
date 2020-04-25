@@ -111,6 +111,10 @@ h6 {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .img-center {
   text-align: center;
   position: relative;

@@ -126,7 +126,7 @@ export default class Categories extends Component {
               <p>
               Find any order by this categorie. Any product u can imagine is here.
               </p>
-              <a href="Business" class="text categoryLink"> See more</a>
+              <a href="/categories/Business" class="text categoryLink"> See more</a>
             </div>
           </div>
         </section>

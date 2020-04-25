@@ -12,7 +12,7 @@
     word-wrap: break-word;
     background-color: #1e1b26;
     background-clip: border-box;
-    border: 1px solid #e5e9f2;
+    border: 1px solid #343a40;
     border-radius: .2rem;
 }
 .card-headerSettings:first-child {

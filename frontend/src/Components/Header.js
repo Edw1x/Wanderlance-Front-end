@@ -70,10 +70,10 @@ function LogedinUser(props){
                     ></i>
                     My orders
                   </a>
-                  <a href="#" class="dropdown-item colorLink">
+                  <Link to="/userProfile/myproducts" class="dropdown-item colorLink">
                     <i class="fa fa-money iconRed" aria-hidden="true"></i>
                     My products
-                  </a>
+                  </Link>
                   <a href="#" class="dropdown-item colorLink">
                     <i class="fa fa-comment iconRed" aria-hidden="true"></i>
                     Messages

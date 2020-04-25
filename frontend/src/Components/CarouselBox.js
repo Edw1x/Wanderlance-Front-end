@@ -9,6 +9,7 @@ export default class CarouselBox extends Component {
         <UserCard/>
         <UserCard/>
         <UserCard/>
+        <UserCard/>
       </section>
     );
   }
