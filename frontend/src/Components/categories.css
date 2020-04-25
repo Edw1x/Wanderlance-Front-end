@@ -128,17 +128,32 @@
   filter: grayscale(100%);
 }
 
-.menu {
-  position: absolute;
-  right: 12px;
-  top: 6px;
-  z-index: 999;
+.categoryLink {
+  color:red;
+  text-decoration: none;
 }
 
-.menu-bor {
-  display: block;
-  border: 1px solid #c42034;
-  border-radius: 5px;
-  padding: 1px;
-  width: 54px;
+.categoryLink:hover{
+  color:burlywood;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+  #timeline {
+    display: inline-block;
+  }
+
+  .tl-item:hover {
+    width: 100% !important;
+  }
+
+  #timeline:hover .tl-item {
+    width: 100%;
+  }
+
+  .tl-item {
+    width: 100%; 
+  }
+
 }

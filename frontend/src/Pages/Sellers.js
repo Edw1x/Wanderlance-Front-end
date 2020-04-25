@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./home.css";
-import "./sellerbar.css";
 import CarouselBox from "../Components/CarouselBox";
 import Ourseller from "../Components/OurSeller";
 import Categories from "../Components/Categories";
@@ -21,21 +20,40 @@ export default class Sellers extends Component {
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="stylesheet" href="css/style.css" />
-        <div class="menu">
-          <div class="title">MENU</div>
-          <Categories />
-        </div>
         <section class="hero">
           <div class="hero-one"></div>
           <div class="hero-two"></div>
           <h1 class="hero-title"></h1>
         </section>
         <section id="music" className="section back">
-          <div style={{color: 'white'}} className="text-center">
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-google-plus-square"></i>
-            <i class="fab fa-facebook-square"></i>
-            <i class="fas fa-share-alt-square"></i>
+          <div className="accordion">
+            <div className="white-text bg-red" id="accordion">
+              <div class="faqStorage">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0 cA text-center">
+                    <button
+                      className="btn btn-link accordionLink"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Categories
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <Categories />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="">
             <section id="video" className="section bg-grey mg-top">
@@ -68,7 +86,7 @@ export default class Sellers extends Component {
             <CarouselBox />
           </div>
         </section>
-        <Footer/>
+        <Footer />
       </div>
     );
   }

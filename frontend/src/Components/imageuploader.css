@@ -26,6 +26,7 @@
   .inputfile:focus + button,
   .inputfile + button:hover {
       background-color: red;
+
   }
 
   .cAlabel label {
@@ -39,4 +40,5 @@
     font-weight: 400px;
     letter-spacing: 1px;
     margin-bottom: 0.25em;
+    cursor: pointer;
   }

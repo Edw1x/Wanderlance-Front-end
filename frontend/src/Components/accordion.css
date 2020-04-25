@@ -1,9 +1,11 @@
 .accordionLink {
     color:white;
+    text-decoration: none;
   }
   
   .accordionLink:hover{
     color:burlywood;
+    text-decoration: none;
   }
   
   .accordion {

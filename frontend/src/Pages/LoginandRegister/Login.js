@@ -4,69 +4,67 @@ import { Form } from "react-bootstrap";
 
 import "./loginANDregister.css";
 
-const token = localStorage.getItem('Token');
+const token = localStorage.getItem("Token");
 let isLogined = token ? true : false;
 
 export default class Login extends Component {
-
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       username: localStorage.getItem("Remembered") || "",
       password: "",
-      rememberMe: localStorage.getItem("Remembered") ? true : false
+      rememberMe: localStorage.getItem("Remembered") ? true : false,
     };
     //this.input = React.createRef();
   }
 
-  componentWillMount(){
-    if(isLogined){
-      this.props.history.push('/');
+  componentWillMount() {
+    if (isLogined) {
+      this.props.history.push("/");
     }
   }
 
-  onSubmit = e => {
+  onSubmit = (e) => {
     e.preventDefault();
 
     console.log(this.state);
 
-    fetch('http://127.0.0.1:8000/auth/login/', {
-      method: 'POST',
+    fetch("http://127.0.0.1:8000/auth/login/", {
+      method: "POST",
       body: JSON.stringify(this.state),
       headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      }
-    }).then(res => res.json()).then(data => {
-      if (data.detail) {
-        this.props.history.push('/');
-      } else {
-        console.log(data);
-        localStorage.setItem("Token", data.Token);
-        if (this.state.rememberMe) {
-          this.rememberUser();
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.detail) {
+          this.props.history.push("/");
+        } else {
+          console.log(data);
+          localStorage.setItem("Token", data.Token);
+          if (this.state.rememberMe) {
+            this.rememberUser();
+          }
+          this.props.history.push("/");
+          window.location.reload(false);
         }
-        this.props.history.push('/');
-        window.location.reload(false)
-      }
-    });
-
-  }
-
+      });
+  };
 
   handleChange = async (event) => {
     const { value, name } = event.target;
     this.setState({
-      [name]: value
+      [name]: value,
     });
-    console.log(this.state)
-  }
-
+    console.log(this.state);
+  };
 
   handleTogle = (e) => {
     const { name, checked } = e.target;
     this.setState({
-      [name]: checked
+      [name]: checked,
     });
     this.state.rememberMe = !this.state.rememberMe;
     console.log(this.state.rememberMe);
@@ -74,24 +72,22 @@ export default class Login extends Component {
     if (this.state.rememberMe == false) {
       this.forgetUser();
     }
-  }
+  };
 
   rememberUser = () => {
     localStorage.setItem("Remembered", this.state.username);
-  }
+  };
 
   getRememberedUser = () => {
-    let username = localStorage.getItem('Remembered');
+    let username = localStorage.getItem("Remembered");
     if (username !== null) {
       // We have username!!
       return username;
     }
-  }
+  };
 
   forgetUser = () => {
-
-    localStorage.removeItem('Remembered');
-
+    localStorage.removeItem("Remembered");
   };
 
   render() {
@@ -104,7 +100,7 @@ export default class Login extends Component {
           />
           <div className="form-authWrapper">
             <form onSubmit={this.onSubmit}>
-              <h1-1>Log in with email</h1-1>
+              <h1-1>Log in</h1-1>
               <div className="email">
                 <label htmlFor="email">Username</label>
                 <input
@@ -127,27 +123,44 @@ export default class Login extends Component {
                 />
               </div>
               <div className="grey">
-                <a href="/ResetPassword">
-                  Forgot password?
-              </a>
+                <a href="/ResetPassword">Forgot password?</a>
               </div>
               <Form.Group controlId="formBasickCheckbox">
-                <Form.Check type="checkbox" checked={this.state.rememberMe} onChange={this.handleTogle} label="Remember me" />
+                <Form.Check
+                  type="checkbox"
+                  checked={this.state.rememberMe}
+                  onChange={this.handleTogle}
+                  label="Remember me"
+                />
               </Form.Group>
               <div className="createAccount">
                 <button type="submit">Log in</button>
                 <div className="grey">
-                  <a href="/register">
-                    Don't have an account? Click here
-                </a>
+                  <a href="/register">Don't have an account? Click here</a>
                 </div>
               </div>
-          <div style={{color: 'white'}} className="text-center loginIcons">
-            <i class="fa fa-icon fa-facebook" style = {{width:'90px'}}></i>
-            <i class="fa fa-icon fa-google"></i>
-            <i class="fa fa-icon fa-instagram"></i>
-            <i class="fa fa-icon fa-twitter"></i>
-          </div>
+              <div class="icon-container iconLink">
+                <a
+                  href="https://www.youtube.com/watch?v=ZVVWuPMWc5U"
+                  class="fa fa-facebook fa-2x icon-3d iconLink"
+                ></a>
+                <a
+                  href="https://www.youtube.com/watch?v=ZVVWuPMWc5U"
+                  class="fa fa-twitter fa-2x icon-3d iconLink"
+                ></a>
+                <a
+                  href="https://www.youtube.com/watch?v=ZVVWuPMWc5U"
+                  class="fa fa-google fa-2x icon-3d iconLink"
+                ></a>
+                <a
+                  href="https://www.youtube.com/watch?v=ZVVWuPMWc5U"
+                  class="fa fa-github fa-2x icon-3d iconLink"
+                ></a>
+                <a
+                  href="https://www.youtube.com/watch?v=ZVVWuPMWc5U"
+                  class="fa fa-telegram fa-2x icon-3d iconLink"
+                ></a>
+              </div>
             </form>
           </div>
         </div>

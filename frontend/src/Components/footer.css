@@ -27,3 +27,11 @@ footer .footer-cols {
   .FooterGrey {
     background-color: rgba(33, 27, 38, 0.95);
   }
+
+
+
+  @media screen and (max-width: 400px) {
+    footer .footer-cols {
+      display: inline-block;
+    }  
+  }

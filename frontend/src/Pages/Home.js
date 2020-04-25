@@ -31,13 +31,11 @@ export default class Home extends Component {
         {/* Showcase & Nav */}
         <div id="showcase">
           <div className="section-main container">
-            <h1>WanderLance</h1>
-            <h2>
+            <h1 className="projectName">WanderLance</h1>
+            <h2 className="titleUnderName">
               Site for people that want to become a freelancer or make an order.
             </h2>
-            <p className="hide-on-small red">
-              Enjoy the time you spend here
-            </p>
+            <p className="hide-on-small red">Enjoy the time you spend here</p>
           </div>
         </div>
         <section class="hero">
@@ -65,24 +63,16 @@ export default class Home extends Component {
               src="https://icons.iconarchive.com/icons/inipagi/business-economic/1024/graph-icon.png"
             />
           </div>
-          <h1 class="hero-title">
-            <img
-              className="imageOnHeroSize"
-              src="https://icons.iconarchive.com/icons/100-seedless-penguins/borderlands/512/Borderlands-Crimson-Lance-icon.png"
-            />
-          </h1>
         </section>
 
         {/* Sellers Section */}
         <section id="sellers" className="section back">
           <div class="container col">
-            <h2 className="section-head text-center">
-              Sellers
-            </h2>
+            <h2 className="section-head text-center">Sellers</h2>
             <h4 className="text-center text">
               45 million sellers with us now. Zero ads.
             </h4>
-            <CarouselBox/>
+            <CarouselBox />
           </div>
         </section>
 
@@ -103,30 +93,33 @@ export default class Home extends Component {
           <div className="container">
             <h1 className="text-center text">Make your own choise.</h1>
             <Infocards />
-            <p className="white-text text-center">take your time and think about</p>
+            <p className="white-text text-center">
+              take your time and think about
+            </p>
           </div>
         </section>
 
         {/* F.A.Q section*/}
         <section id="F.A.Q" className="section bg-grey">
           <div className="container">
-          <h2> F. A. Q. </h2>
-          <Accordion/>
+            <h2> F. A. Q. </h2>
+            <Accordion />
             <div>
               <div>
                 <div>
-                <img
-                  src="https://images.pexels.com/photos/4031867/pexels-photo-4031867.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                  alt="domoi"
-                />
-              </div>
+                  <img
+                    id="corona"
+                    src="https://images.pexels.com/photos/4031867/pexels-photo-4031867.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="domoi"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Footer */}
-        <Footer/>
+        <Footer />
       </div>
     );
   }

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../home.css";
-import "../sellerbar.css";
 import CarouselBox from "../../Components/CarouselBox";
 import Categories from "../../Components/Categories";
 import Footer from "../../Components/Footer";
@@ -20,17 +19,43 @@ export default class MusicAndAudio extends Component {
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="stylesheet" href="css/style.css" />
-        <div class="menu">
-          <div class="title">MENU</div>
-          <Categories />
-        </div>
         <section class="hero">
           <div class="hero-one"></div>
           <div class="hero-two"></div>
           <h1 class="hero-title"></h1>
         </section>
         <section id="music" className="section back">
-        <div style={{ color: "white" }} className="text-center">
+          <div style={{ color: "white" }} className="text-center">
+            <div className="accordion">
+              <div className="white-text bg-red" id="accordion">
+                <div class="faqStorage">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0 cA text-center">
+                      <button
+                        className="btn btn-link accordionLink"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        Categories
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseOne"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <Categories />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="btn-group cA">
               <button
                 type="button"
@@ -66,7 +91,7 @@ export default class MusicAndAudio extends Component {
             <CarouselBox />
           </div>
         </section>
-        <Footer/>
+        <Footer />
       </div>
     );
   }
