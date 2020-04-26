@@ -58,7 +58,7 @@ export default class userProfile extends Component {
       <div class="cnt cardSettings">
         <header>
           <div className="report right">
-            <button type="submit">report</button>
+          <button type="submit" onClick={event =>  window.location.href='/reportForm'} >Report</button>
           </div>
         </header>
         <main>

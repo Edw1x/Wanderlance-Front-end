@@ -125,16 +125,16 @@ export default class Settings extends Component {
                     </div>
     
                     <div class="list-group list-group-flush" role="tablist">
-                        <a class="list-group-item list-group-item-action active" data-toggle="list" href="#account" role="tab">
+                        <a class="list-group-item list-group-item-action active text-white" data-toggle="list" href="#account" role="tab">
                           Account
                         </a>
-                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#password" role="tab">
+                        <a class="list-group-item list-group-item-action text-white" data-toggle="list" href="#password" role="tab">
                           Password
                         </a>
-                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#login" role="tab">
+                        <a class="list-group-item list-group-item-action text-white" data-toggle="list" href="#login" role="tab">
                           Login
                         </a>
-                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#delete" role="tab">
+                        <a class="list-group-item list-group-item-action text-white" data-toggle="list" href="#delete" role="tab">
                           Delete account
                         </a>
                     </div>

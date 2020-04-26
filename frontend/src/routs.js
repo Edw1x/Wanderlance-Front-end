@@ -9,7 +9,9 @@ import sellers from "./Pages/Sellers";
 import sellerspage from "./Pages/SellersPage";
 import settings from "./Pages/Settings";
 import myproducts from "./Pages/MyProducts";
+import myorders from "./Pages/MyOrders"
 import createproduct from "./Pages/createProduct";
+import reportform from "./Pages/ReportForm";
 
 //LoginandRegister
 import Login from "./Pages/LoginandRegister/Login";
@@ -50,6 +52,8 @@ export default class routs extends Component {
             <Route exact path="/userProfile/settings" component={settings} />
             <Route exact path="/userProfile/myProducts" component={myproducts} />
             <Route exact path="/userProfile/myProducts/createProduct" component={createproduct} />
+            <Route exact path="/userProfile/myOrders" component={myorders} />
+            <Route exact path="/reportForm" component={reportform} />
           </Switch>
         );
     }

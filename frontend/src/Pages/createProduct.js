@@ -63,6 +63,7 @@ export default class createProduct extends Component {
             <form>
               <div class="row">
                 <div class="col-md-8">
+                  
                   <div class="form-group text-left">
                     <label for="inputUsername">Product title</label>
                     <textarea
@@ -72,6 +73,7 @@ export default class createProduct extends Component {
                       placeholder="Product title"
                     ></textarea>
                   </div>
+
                   <div class="form-group text-left">
                     <label for="inputUsername">Product description</label>
                     <textarea
@@ -81,6 +83,7 @@ export default class createProduct extends Component {
                       placeholder="Product description"
                     ></textarea>
                   </div>
+
                   <div class="form-group text-left">
                     <label for="inputUsername">Price</label>
                     <textarea
@@ -90,6 +93,7 @@ export default class createProduct extends Component {
                       placeholder="Price"
                     ></textarea>
                   </div>
+
                   <div class="form-group text-left">
                     <label for="inputUsername">Category</label>
                     <select class="custom-select d-block w-100" id="country" required="">

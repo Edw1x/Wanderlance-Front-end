@@ -1,0 +1,25 @@
+.list-group-item {
+  background-color: #66142c;
+  border: 1px solid #343a40;
+}
+
+.productNameOfOrder {
+  font-size: 20px;
+  color: #da3365;
+}
+
+.moneySize {
+    font-size: 30px;
+    color:green;
+}
+
+.orderStatus {
+    margin-left: 70%;
+    background-color: green;
+}
+
+
+.button-order-margin {
+    margin: 10px;
+    margin-left:10%;
+}

@@ -97,3 +97,7 @@ hr.white{
 .grey a:hover {
   color: #c42034;
 }
+
+.logoNameMargin {
+  margin-top: 20px;
+}

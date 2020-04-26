@@ -10,7 +10,14 @@ const url = "http://localhost:8000/media/images/"
 
 function LogedinUser(props){
   return(
-    <div class="btn-group rounded-circle size red ">
+    <div class="btn-group rounded-circle size red">
+                <div className="logoNameMargin">
+                  <h4 class="name white-text">
+                    {" "}
+                    {props.first_name} {props.last_name}
+                  </h4>
+                </div>
+                
                 <a
                   type="link"
                   class="btn dropdown-toggle "
@@ -34,6 +41,8 @@ function LogedinUser(props){
                       />
                     </a>
                   </figure>
+                  <div>
+              </div>
                 </a>
                 <div class="dropdown-menu">
                   <div>
@@ -63,13 +72,10 @@ function LogedinUser(props){
                     </figure>
                   </div>
                   <div class="dropdown-divider"></div>
-                  <a href="#" class="dropdown-item colorLink">
-                    <i
-                      class="fa fa-shopping-cart iconRed"
-                      aria-hidden="true"
-                    ></i>
+                  <Link to="/userProfile/myorders" class="dropdown-item colorLink">
+                    <i class="fa fa-shopping-cart iconRed"aria-hidden="true"></i>
                     My orders
-                  </a>
+                  </Link>
                   <Link to="/userProfile/myproducts" class="dropdown-item colorLink">
                     <i class="fa fa-money iconRed" aria-hidden="true"></i>
                     My products
