@@ -92,12 +92,16 @@ export default class createProduct extends Component {
                   </div>
                   <div class="form-group text-left">
                     <label for="inputUsername">Category</label>
-                    <textarea
-                      rows="2"
-                      class="form-control"
-                      id="inputBio"
-                      placeholder="Category"
-                    ></textarea>
+                    <select class="custom-select d-block w-100" id="country" required="">
+                      <option value="">Choose category</option>
+                      <option>Business</option>
+                      <option>Digital marketing</option>
+                      <option>Graphics and design</option>
+                      <option>Music and audio</option>
+                      <option>Programming and tech</option>
+                      <option>Video and animation</option>
+                      <option>Writing and translation</option>
+                      </select>
                   </div>
                 </div>
                 <div class="col-md-4">
