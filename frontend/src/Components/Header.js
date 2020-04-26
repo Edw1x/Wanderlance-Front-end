@@ -141,7 +141,7 @@ export default class Header extends Component {
       }).then(res => res.json()).then(data => {
         console.log(data);
         this.setState(data.user);
-		localStorage.setItem('id', this.state.id);
+    localStorage.setItem('id', this.state.id);
         this.setState({ fetched: true });
         this.setState({image: data.image.image});
         localStorage.setItem("User", JSON.stringify(this.state));
@@ -174,7 +174,7 @@ export default class Header extends Component {
               </Nav>
               {isLogined && this.state.fetched ? <LogedinUser 
               first_name={this.state.username} 
-              last_name={this.state.last_name} 
+              last_name=""
               logOutClick={this.logOut}
               img = {url + this.state.image}/>:isLogined?<p></p>:                <div className="cA">
                   <button type="submit" onClick={event =>  window.location.href='/login'}>Click here to enter your account</button>

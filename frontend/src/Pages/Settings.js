@@ -19,7 +19,10 @@ export default class Settings extends Component {
           last_login: null,
           date_joined: null,
           fetched: false,
-          image: null
+          image: null,
+          old_password: "",
+          new_password1: "",
+          new_password2: ""
         };
       }
 
@@ -49,6 +52,64 @@ export default class Settings extends Component {
           this.setState(JSON.parse(user));
         }
       }
+      handleChange = (event) => {
+        const { value, name } = event.target;
+        this.setState({
+          [name]: value,
+        });
+        console.log(this.state);
+        console.log(this.props);
+      };
+
+
+      nameChange = (e) => {
+        e.preventDefault();
+    
+        let fd = new FormData();
+        fd.append('first_name', this.state.first_name);
+        fd.append('last_name', this.state.last_name);
+    
+        fetch('http://localhost:8000/users/edit/', {
+            method: 'PATCH',
+            headers: {
+                'Authorization': `Token ${token}`,
+            },
+            body: fd
+        }).then(res => {
+			
+            window.location.reload(false)
+			// localStorage.removeItem('User')
+			// console.log(this.state);
+            return res.json()
+        });
+      };
+
+      passwordChange = (e) => {
+        e.preventDefault();
+    
+        let fd = new FormData();
+        fd.append('old_password', this.state.old_password);
+        fd.append('new_password1', this.state.new_password2);
+        fd.append('new_password2', this.state.new_password2);
+    
+        fetch('http://localhost:8000/auth/change_password/', {
+            method: 'POST',
+            headers: {
+                'Authorization': `Token ${token}`,
+            },
+            body: fd
+        }).then(res => {
+			
+            window.location.reload(false)
+			localStorage.removeItem('Token')
+			 console.log(this.state);
+            return res.json()
+        });
+      };
+
+
+
+
     render() {
       return (
         <div class="container p-0 white-text cA">
@@ -116,14 +177,11 @@ export default class Settings extends Component {
                                         </div>
                                         <div class="col-md-4">
                                             <div class="text-center">
-                                            <img
-            
-                                            class="photo rounded-circle img-responsive mt-2"
-                                            src={this.state.image?url + this.state.image:""}
-                                            width="128" height="128"
-                                            />
+                                          
                                                 <div class="mt-2">
-                                                <ImageUploader/>
+                                                <ImageUploader
+                                                urlProps = {this.props.match.path}
+                                                image = {this.state.image}/>
                                                 </div>
                                                 <small>For best results, use an image at least 128px by 128px in .jpg format</small>
                                             </div>
@@ -158,15 +216,25 @@ export default class Settings extends Component {
                                 <h5 class="card-title mb-0">Private info</h5>
                             </div>
                             <div class="card-body">
-                                <form>
+                                <form onSubmit={this.nameChange}>
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
                                             <label for="inputFirstName">First name</label>
-                                            <input type="text" class="form-control" id="inputFirstName" placeholder="First name"/>
+                                            <input type="text" 
+                                            class="form-control" 
+                                            id="inputFirstName" 
+                                            name = "first_name"
+                                            placeholder="First name" 
+                                            onChange = {this.handleChange}/>
                                         </div>
                                         <div class="form-group col-md-6">
                                             <label for="inputLastName">Last name</label>
-                                            <input type="text" class="form-control" id="inputLastName" placeholder="Last name"/>
+                                            <input type="text" 
+                                            class="form-control" 
+                                            id="inputLastName" 
+                                            name = "last_name"
+                                            placeholder="Last name"  
+                                            onChange = {this.handleChange}/>
                                         </div>
                                     </div>
                                     <button type="submit">Save changes</button>
@@ -181,10 +249,14 @@ export default class Settings extends Component {
                             <div class="card-body">
                                 <h5 class="card-title">Password</h5>
     
-                                <form>
-                                    <div class="form-group">
+                                <form onSubmit={this.passwordChange}>
+                                    <div class="form-group" >
                                         <label for="inputPasswordCurrent">Current password</label>
-                                        <input type="password" class="form-control" id="inputPasswordCurrent"/>
+                                        <input type="password"  
+                                        class="form-control" 
+                                        id="inputPasswordCurrent"
+                                        name="old_password"
+                                        onChange = {this.handleChange}/>
                                         <div className="grey">
                                             <a href="/ResetPassword">
                                             Forgot password?
@@ -193,11 +265,19 @@ export default class Settings extends Component {
                                     </div>
                                     <div class="form-group">
                                         <label for="inputPasswordNew">New password</label>
-                                        <input type="password" class="form-control" id="inputPasswordNew"/>
+                                        <input type="password" 
+                                        class="form-control" 
+                                        id="inputPasswordNew"
+                                        name="new_password1"
+                                        onChange = {this.handleChange}/>
                                     </div>
                                     <div class="form-group">
                                         <label for="inputPasswordNew2">Verify password</label>
-                                        <input type="password" class="form-control" id="inputPasswordNew2"/>
+                                        <input type="password" 
+                                        class="form-control" 
+                                        id="inputPasswordNew2"
+                                        name="new_password2"
+                                        onChange = {this.handleChange}/>
                                     </div>
                                     <button type="submit">Save changes</button>
                                 </form>

@@ -90,6 +90,15 @@ export default class createProduct extends Component {
                       placeholder="Price"
                     ></textarea>
                   </div>
+                  <div class="form-group text-left">
+                    <label for="inputUsername">Category</label>
+                    <textarea
+                      rows="2"
+                      class="form-control"
+                      id="inputBio"
+                      placeholder="Category"
+                    ></textarea>
+                  </div>
                 </div>
                 <div class="col-md-4">
                   <h3>The uncreateble params people will see:</h3>

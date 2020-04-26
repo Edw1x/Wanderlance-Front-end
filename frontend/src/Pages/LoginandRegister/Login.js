@@ -40,7 +40,7 @@ export default class Login extends Component {
       .then((res) => res.json())
       .then((data) => {
         if (data.detail) {
-          this.props.history.push("/");
+          console.log(data.detail);
         } else {
           console.log(data);
           localStorage.setItem("Token", data.Token);
@@ -53,7 +53,7 @@ export default class Login extends Component {
       });
   };
 
-  handleChange = async (event) => {
+  handleChange = (event) => {
     const { value, name } = event.target;
     this.setState({
       [name]: value,

@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import "./imageuploader.css";
 const token = localStorage.getItem('Token');
-let userData = localStorage.getItem('User');
-let data = JSON.parse(userData);
 let id = localStorage.getItem('id');
+const url = "http://localhost:8000/media/images/"
 
 export default class ImageUploader extends Component {
     constructor(props) {
@@ -11,17 +10,7 @@ export default class ImageUploader extends Component {
         this.state = {
             image: null,
             user: null,
-            refreshdata: {
-                id: null,
-                username: "",
-                first_name: "",
-                last_name: "",
-                last_login: null,
-                date_joined: null,
-                fetched: false,
-                image: null
-
-            }
+            imgUrl: ""
         };
     }
 
@@ -30,6 +19,7 @@ export default class ImageUploader extends Component {
         fd.append('user', this.state.user);
         fd.append('image', this.state.image);
         e.preventDefault();
+        console.log(`${fd.get('user')} ${fd.get('image')}`)
         if(this.state.image)
         fetch('http://localhost:8000/media/upload/', {
             method: 'POST',
@@ -49,32 +39,42 @@ export default class ImageUploader extends Component {
 
     _handleImageChange(e) {
         e.preventDefault();
-		
+        
+        let reader = new FileReader();
         let file = e.target.files[0];
-		
+        
+        reader.onloadend = () => {
         this.setState({
             image: file,
-            user: id
+            user: id,
+            imgUrl: reader.result,
         });
+       }
         console.log(this.state);
-
+        console.log(this.props.urlProps);
+        if(file)
+        reader.readAsDataURL(file)
     }
 	
-	componentWillMount(){
-		userData = localStorage.getItem('User');
-		data = JSON.parse(userData);
-	}
 	
     render() {
         return (
+        <div id = {this.props.urlProps}>
+            {this.props.urlProps?
+            <img
+            class="photo rounded-circle img-responsive mt-2"
+            src={this.state.imgUrl?this.state.imgUrl:this.props.image?url + this.props.image:""}
+            width="128" height="128"
+            />:""}
             <div className="previewComponent cA cAlabel">
                 <form onSubmit={(e) => this._handleSubmit(e)}>
-                    <input type="file" except="image/*" name="file" id="file" class="inputfile" onChange={(e) => this._handleImageChange(e)} />
-                    <label for="file">Choose a file</label>
+                    <input type="file" accept="image/*" name="file" id="file" class="inputfile" onChange={(e) => this._handleImageChange(e)} />
+                    <label for="file" >Choose a file</label>
                 </form>
                 <button className="submitButton"
                         type="submit"
                         onClick={(e) => this._handleSubmit(e)}>Upload Image</button>
+            </div>
             </div>
         )
     }
