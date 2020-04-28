@@ -99,12 +99,13 @@ export default class Settings extends Component {
             },
             body: fd
         }).then(res => {
-			
-            window.location.reload(false)
-			localStorage.removeItem('Token')
-			 console.log(this.state);
             return res.json()
-        });
+        }).then(data => {
+            localStorage.removeItem('Token', data.Token)
+            localStorage.setItem('Token', data.Token)
+            window.location.reload(false)
+			console.log(this.state);
+        })
       };
 
 
