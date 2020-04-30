@@ -23,7 +23,7 @@ export default class UserCard extends Component {
                 Please be careful when u smth Please be careful when u smth Please be careful when u smth Please be careful when u smth
               </p>
               <div className="cA">
-                <button type="submit" onClick={event =>  window.location.href='/sellerspage#'}>Buy this product</button>
+                <button type="submit" onClick={event =>  window.location.href=`/sellerspage/${this.props.id}`}>Buy this product</button>
                 <div className="grey">
                   <a href="#">Want to look for same , click here.</a>
                 </div>
@@ -34,7 +34,7 @@ export default class UserCard extends Component {
         <div class="text-card-cont">
           <div class="mr-grid">
             <div class="col1">
-              <h1>Photographer</h1>
+    <h1>{this.props.title}</h1>
               <Ourseller />
               <hr className="white" />
             </div>
@@ -58,10 +58,8 @@ export default class UserCard extends Component {
           </div>
           <div class="mr-grid">
             <div class="col1">
-              <p class="userCardDescription">
-                DOING STUFFDOING STUFFDOING STUFFDOING STUFF DOING
-                STUFFDOING STUFFDOING STUFFDOING STUFF DOING
-                STUFFDOING STUFF.{" "}
+              <p class="userCardDescription" numberOfLines={5}>
+               {this.props.description?this.props.description.slice(0,100):""}
               </p>
             </div>
           </div>
@@ -80,7 +78,7 @@ export default class UserCard extends Component {
             </div>
             <div class="priceSection">
               <h6>
-              25
+              {this.props.price}
                 <i class="material-icons"> &#x24;</i>
               </h6>
             </div>

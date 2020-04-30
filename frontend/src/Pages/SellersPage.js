@@ -27,6 +27,7 @@ const images = [
       "https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
   }
 ];
+const token = localStorage.getItem('Token');
 export default class SellerPage extends Component {
   constructor(props) {
     super(props);
@@ -43,12 +44,15 @@ export default class SellerPage extends Component {
       owner: null
     };
   }
-  /*
+  
   componentDidMount(){
     const { id } = this.props.match.params;
 
     fetch(`http://localhost:8000/services/${id}/`,{
-      method: "GET"
+      method: "GET",
+      headers: {
+        'Authorization': `Token ${token}`,
+      },
     }).then(res => res.json()).then(data => {
       console.log(data);
       this.setState(data);
@@ -57,7 +61,7 @@ export default class SellerPage extends Component {
 
 
   }
-*/
+
   render() {
     return (
       <div>

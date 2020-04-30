@@ -47,6 +47,7 @@ export default class routs extends Component {
             <Route exact path="/categories/VideoAndAnimation" component={VideoAndAnimation} />
             <Route exact path="/categories/WritingAndTranslation" component={WritingAndTranslation} />
             <Route exact path="/sellerspage" component={sellerspage} />
+            <Route exact path="/sellerspage/:id" component={sellerspage} />
             <Route exact path="/resetpassword" component={resetpassword} />
             <Route exact path="/resetpasswordConfirm" component={resetpasswordConfirm} />
             <Route exact path="/userProfile/settings" component={settings} />
