@@ -97,7 +97,7 @@ export default class createProduct extends Component {
         },
         body: fd
       }).then(res => {
-        this.props.history.push("/userProfile/myproducts")
+        this.props.history.push("/userProfile/myProducts/Upload/:id")
         return res.json()
       })
     }

@@ -17,16 +17,15 @@ export default class UserCard extends Component {
           </div>
           <div class="back text-center">
             <div className="margin-top">
-              <h2>Bodya Gornostai</h2>
-              <p>
-                Please be careful when u smth Please be careful when u smth Please be careful when u smth Please be careful when u smth
-                Please be careful when u smth Please be careful when u smth Please be careful when u smth Please be careful when u smth
-              </p>
+              <h2>Admin Panel</h2>
+              <div className="cA">
+                <button type="submit" onClick={event =>  window.location.href=`/userProfile/myProducts/Upload/${this.props.id}`}>Upload a photo</button>
+                <button type="submit" onClick={event =>  window.location.href=`/sellerspage/${this.props.id}`}>Delete this product</button>
+              </div>
+              <div className="border border-dark mt-2 mb-2"></div>
+              <h2>User menu</h2>
               <div className="cA">
                 <button type="submit" onClick={event =>  window.location.href=`/sellerspage/${this.props.id}`}>Buy this product</button>
-                <div className="grey">
-                  <a href="#">Want to look for same , click here.</a>
-                </div>
               </div>
             </div>
           </div>
@@ -34,7 +33,7 @@ export default class UserCard extends Component {
         <div class="text-card-cont">
           <div class="mr-grid">
             <div class="col1">
-    <h1>{this.props.title}</h1>
+                <h1>{this.props.title}</h1>
               <Ourseller />
               <hr className="white" />
             </div>
@@ -57,33 +56,35 @@ export default class UserCard extends Component {
             </div>
           </div>
           <div class="mr-grid">
-            <div class="col1">
-              <p class="userCardDescription" numberOfLines={5}>
+            <div class="col1 ">
+              <p class="userCardDescription module">
                {this.props.description?this.props.description.slice(0,100):""}
               </p>
             </div>
           </div>
-          <div class="mr-grid">
-            <div class="col1">
-              <p class="userCardReviews">15 reviews on this product</p>
-            </div>
+          <div>
+            
           </div>
           <div class="mr-grid">
-            <div class="">
-              <div class="priceBorder">
-                <h3>
-                  <i class="material-icons">&#xE037;</i> PRICE:
-                </h3>
+              <div class="col1">
+                <p class="userCardReviews">15 reviews on this product</p>
               </div>
             </div>
-            <div class="priceSection">
-              <h6>
-              {this.props.price}
-                <i class="material-icons"> &#x24;</i>
-              </h6>
+            <div class="mr-grid">
+              <div class="">
+                <div class="priceBorder">
+                  <h3>
+                    <i class="material-icons">&#xE037;</i> PRICE:
+                  </h3>
+                </div>
+              </div>
+              <div class="priceSection">
+                <h6>
+                {this.props.price}
+                  <i class="material-icons"> &#x24;</i>
+                </h6>
+              </div>
             </div>
-            <div></div>
-          </div>
         </div>
       </div>
     </div>

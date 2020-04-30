@@ -1,11 +1,11 @@
 .list-group-item {
-  background-color: #66142c;
+  background-color: #1d1212;
   border: 1px solid #343a40;
 }
 
 .productNameOfOrder {
   font-size: 20px;
-  color: #da3365;
+  color: #df1321;
 }
 
 .moneySize {
@@ -14,12 +14,31 @@
 }
 
 .orderStatus {
-    margin-left: 70%;
+    margin-left: 50%;
     background-color: green;
+}
+
+.orderStatusNotDone {
+  margin-left: 50%;
+  background-color: red;
+  color:black;
 }
 
 
 .button-order-margin {
     margin: 10px;
     margin-left:10%;
+}
+
+.flex {
+  float: left;
+}
+
+.clientOrderContainer {
+  max-width: 900px;
+  margin: 30px auto 30px;
+  padding: 0 !important;
+  width: 90%;
+  background-color: #1e1b26;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.10);
 }

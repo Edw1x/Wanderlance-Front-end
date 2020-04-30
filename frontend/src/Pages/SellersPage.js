@@ -75,7 +75,7 @@ export default class SellerPage extends Component {
               <div class="col-md-4">
                 <div className="cont">
                   <h3 class="my-3">Product Description</h3>
-                  <p className="white-text">{this.state.description}</p>
+                  <p className="white-text wordBreak">{this.state.description}</p>
                   <hr className="white" />
                   <h3 class="my-3">Seller</h3>
                   <Ourseller />

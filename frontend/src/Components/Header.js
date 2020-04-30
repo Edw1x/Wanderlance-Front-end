@@ -89,9 +89,10 @@ function LogedinUser(props){
                     Settings
                   </Link>
                   <div class="dropdown-divider"></div>
-                  <a href="#" class="dropdown-item colorLink">
-                    Balance: <span className="moneyColor">1000$</span>
-                  </a>
+                  <Link to="/userProfile/clientOrders" class="dropdown-item colorLink">
+                    <i class="fa fa-user iconRed"aria-hidden="true"></i>
+                    Client orders
+                  </Link>
                   <div class="dropdown-divider"></div>
                   <a href="#" onClick={props.logOutClick} class="dropdown-item colorLink">
                     <i class="fa fa-sign-out-alt iconRed" aria-hidden="true"></i>

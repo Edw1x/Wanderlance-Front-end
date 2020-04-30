@@ -131,7 +131,7 @@
   }
   .margin-top{
     position: relative;
-    margin-top: 100px;
+    margin-top: 20px;
   }
   .flip > .back {
     position: absolute;
@@ -176,6 +176,17 @@
     font-size: 0.9125rem;
     line-height: 160%;
     color: #999;
+  }
+  .module {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  
+    height: 45px;
+  }
+
+  .wordBreak {
+    word-break: break-all;
   }
   
   /* unknown right edge for user card 
