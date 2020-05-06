@@ -17,9 +17,6 @@ export default class ClientOrders extends Component {
         <main>
           <h4 class="card-title mb-0 text-center">
             You have 4 orders on this account{" "}
-            <span class="badge white bg-red badge-pill">
-            3 messages unread
-            </span>
           </h4>
           <ul class="list-group mb-3">
             <OrderInfo/>

@@ -11,7 +11,6 @@ export default class ClientOrders extends Component {
         <div>
           <h5 class="my-0 red productNameOfOrder">
             Status{" "}
-            <span class="badge white red badge-pill">3 messages unread</span>
             <span class="badge border grey orderStatusNotDone">
               {" "}
               Not done

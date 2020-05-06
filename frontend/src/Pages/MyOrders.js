@@ -16,9 +16,6 @@ export default class MyOrders extends Component {
         <main>
           <h4 class="card-title mb-0 text-center">
             You have 4 orders on this account{" "}
-            <span class="badge badge-secondary badge-pill">
-              3 unreadeble changes
-            </span>
           </h4>
           <ul class="list-group mb-3">
               
@@ -26,7 +23,6 @@ export default class MyOrders extends Component {
               <div>
                 <h5 class="my-0 red productNameOfOrder">
                   Status{" "}
-                  <span class="badge badge-secondary red badge-pill">3</span>
                   <span class="badge border grey orderStatus">
                     {" "}
                     InProcess
@@ -58,7 +54,6 @@ export default class MyOrders extends Component {
               <div>
                 <h5 class="my-0 red productNameOfOrder">
                   Status{" "}
-                  <span class="badge badge-secondary red badge-pill">3</span>
                   <span class="badge border grey orderStatus">
                     {" "}
                     InProcess
@@ -90,7 +85,6 @@ export default class MyOrders extends Component {
               <div>
                 <h5 class="my-0 red productNameOfOrder">
                   Status{" "}
-                  <span class="badge badge-secondary red badge-pill">3</span>
                   <span class="badge border grey orderStatus">
                     {" "}
                     InProcess
@@ -122,7 +116,6 @@ export default class MyOrders extends Component {
               <div>
                 <h5 class="my-0 red productNameOfOrder">
                   Status{" "}
-                  <span class="badge badge-secondary red badge-pill">3</span>
                   <span class="badge border grey orderStatus">
                     {" "}
                     InProcess
