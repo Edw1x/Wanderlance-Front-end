@@ -19,9 +19,9 @@ export default class ClientOrders extends Component {
             You have 4 orders on this account{" "}
           </h4>
           <ul class="list-group mb-3">
-            <OrderInfo/>
-            <OrderInfo/>
-            <OrderInfo/>
+            <OrderInfo />
+            <OrderInfo />
+            <OrderInfo />
           </ul>
         </main>
       </div>

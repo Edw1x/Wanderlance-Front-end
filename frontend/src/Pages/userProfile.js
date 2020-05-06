@@ -55,10 +55,15 @@ export default class userProfile extends Component {
 
   render() {
     return (
-      <div class="cnt cardSettings">
+      <div class="cnt cardSettings container">
         <header>
           <div className="report right">
-          <button type="submit" onClick={event =>  window.location.href='/reportForm'} >Report</button>
+            <button
+              type="submit"
+              onClick={(event) => (window.location.href = "/reportForm")}
+            >
+              Report
+            </button>
           </div>
         </header>
         <main>
@@ -99,32 +104,81 @@ export default class userProfile extends Component {
                   class="fa fa-telegram fa-2x icon-3d iconLink"
                 ></a>
               </div>
-              <Tabs
-                defaultActiveKey="profile"
-                id="uncontrolled-tab-example"
-                className="red Tabs"
-              >
-                <Tab eventKey="home" title="Products" className="">
-                  <div class="row col">
-                    <UserCard />
-                    <UserCard />
-                    <UserCard />
-                    <UserCard />
-                    <UserCard />
-                    <UserCard />
+              <div class="list-group list-group-flush row col" role="tablist">
+                <a
+                  class="list-group-item list-group-item-action active text-white"
+                  data-toggle="list"
+                  href="#UserProducts"
+                  role="tab"
+                >
+                  User products
+                </a>
+                <a
+                  class="list-group-item list-group-item-action text-white"
+                  data-toggle="list"
+                  href="#Reviews"
+                  role="tab"
+                >
+                  Reviews
+                </a>
+              </div>
+
+              <div class="mt-3">
+                <div class="tab-content">
+                  <div
+                    class="tab-pane fade show active"
+                    id="UserProducts"
+                    role="tabpanel"
+                  >
+                    <div class="cardSettings">
+                      <div class="row">
+                        <UserCard
+                          title="Template title"
+                          description="Hi, we are Wanderlance team, thanks for coming today here, have a nice day. Here is a template description"
+                          price="100000"
+                        />
+                        <UserCard
+                          title="Template title"
+                          description="Hi, we are Wanderlance team, thanks for coming today here, have a nice day. Here is a template description"
+                          price="100000"
+                        />
+                        <UserCard
+                          title="Template title"
+                          description="Hi, we are Wanderlance team, thanks for coming today here, have a nice day. Here is a template description"
+                          price="100000"
+                        />
+                        <UserCard
+                          title="Template title"
+                          description="Hi, we are Wanderlance team, thanks for coming today here, have a nice day. Here is a template description"
+                          price="100000"
+                        />
+                        <UserCard
+                          title="Template title"
+                          description="Hi, we are Wanderlance team, thanks for coming today here, have a nice day. Here is a template description"
+                          price="100000"
+                        />
+                        <UserCard
+                          title="Template title"
+                          description="Hi, we are Wanderlance team, thanks for coming today here, have a nice day. Here is a template description"
+                          price="100000"
+                        />
+                      </div>
+                    </div>
                   </div>
-                </Tab>
-                <Tab eventKey="profile" title="Information" className="">
-                  <p>cook</p>
-                </Tab>
-                <Tab eventKey="contact" title="Reviews" className="">
-                  <div className="reviews">
-                    <Review />
-                    <Review />
-                    <Review />
+
+                  <div
+                    class="tab-pane fade show active"
+                    id="Reviews"
+                    role="tabpanel"
+                  >
+                    <div className="reviews">
+                      <Review />
+                      <Review />
+                      <Review />
+                    </div>
                   </div>
-                </Tab>
-              </Tabs>
+                </div>
+              </div>
             </div>
           </div>
         </main>

@@ -42,3 +42,11 @@ textarea {
     width: 100%;
     color: #c42034;
   }
+
+  .list-group-item.active {
+      background: #461221;
+      border-color: #461221;
+  }
+  .list-group-item:hover {
+    background-color: #461221;
+  }

@@ -75,7 +75,11 @@ export default class UploadProductPhoto extends Component {
           <div className="text-center col-12">
             <h2 class="card-title mb-0 text-center">Title photo</h2>
             <div className="flex">
-          <UserCard/>
+            <UserCard
+          title="Template title"
+          description="Hi, we are Wanderlance team, thanks for coming today here, have a nice day. Here is a template description"
+          price="100000"
+        />
           </div>
             <div>
               <img

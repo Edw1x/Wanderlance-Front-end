@@ -12,22 +12,22 @@ const images = [
     original:
       "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     thumbnail:
-      "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
   },
   {
     original:
       "https://images.pexels.com/photos/245032/pexels-photo-245032.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     thumbnail:
-      "https://images.pexels.com/photos/245032/pexels-photo-245032.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      "https://images.pexels.com/photos/245032/pexels-photo-245032.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
   },
   {
     original:
       "https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     thumbnail:
-      "https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-  }
+      "https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+  },
 ];
-const token = localStorage.getItem('Token');
+const token = localStorage.getItem("Token");
 export default class SellerPage extends Component {
   constructor(props) {
     super(props);
@@ -39,27 +39,27 @@ export default class SellerPage extends Component {
       date: null,
       category: {
         name: null,
-        description: null
+        description: null,
       },
-      owner: null
+      owner: null,
     };
   }
-  
-  componentDidMount(){
+
+  componentDidMount() {
     const { id } = this.props.match.params;
 
-    fetch(`http://localhost:8000/services/${id}/`,{
+    fetch(`http://localhost:8000/services/${id}/`, {
       method: "GET",
       headers: {
-        'Authorization': `Token ${token}`,
+        Authorization: `Token ${token}`,
       },
-    }).then(res => res.json()).then(data => {
-      console.log(data);
-      this.setState(data);
-      console.log(this.state);
     })
-
-
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        this.setState(data);
+        console.log(this.state);
+      });
   }
 
   render() {
@@ -75,7 +75,9 @@ export default class SellerPage extends Component {
               <div class="col-md-4">
                 <div className="cont">
                   <h3 class="my-3">Product Description</h3>
-                  <p className="white-text wordBreak">{this.state.description}</p>
+                  <p className="white-text wordBreak">
+                    {this.state.description}
+                  </p>
                   <hr className="white" />
                   <h3 class="my-3">Seller</h3>
                   <Ourseller />
@@ -102,7 +104,7 @@ export default class SellerPage extends Component {
                 </div>
                 <hr className="white" />
                 <div className="button-buy">
-                  <button type="submit">Buy this product</button>
+                  <button type="submit"onClick={(event) =>(window.location.href = `/orderproductpage`)}>Buy this product</button>
                   <button type="submit">Contact with seller</button>
                 </div>
               </div>
@@ -121,14 +123,20 @@ export default class SellerPage extends Component {
 
             <h1 class="my-4 red ">Simmilar products</h1>
             <div class="container row col">
-              <UserCard/>
-              <UserCard/>
+              <UserCard
+                title="Template title"
+                description="Hi, we are Wanderlance team, thanks for coming today here, have a nice day. Here is a template description"
+                price="100000"
+              />
+              <UserCard
+                title="Template title"
+                description="Hi, we are Wanderlance team, thanks for coming today here, have a nice day. Here is a template description"
+                price="100000"
+              />
             </div>
-
           </div>
-
         </section>
-       <Footer/>
+        <Footer />
       </div>
     );
   }

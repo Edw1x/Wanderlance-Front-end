@@ -40,12 +40,14 @@
   }
   
   header {
-    background: #1e1b26;
-    background-image: url(https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-image: linear-gradient(
+      rgba(30, 27, 38, 0.95),
+        rgba(90, 18, 25, 0.95)
+      ),
+      url(https://images.pexels.com/photos/3530102/pexels-photo-3530102.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    background-color: red;
     height: 250px;
   }
 

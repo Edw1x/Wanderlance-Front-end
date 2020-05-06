@@ -22,7 +22,11 @@ export default class ClientOrders extends Component {
 
           <h5 class="my-0 red productNameOfOrder">Order</h5>
           <div className="flex col-md-6">
-            <UserCard />
+            <UserCard
+              title="Template title"
+              description="Hi, we are Wanderlance team, thanks for coming today here, have a nice day. Here is a template description"
+              price="100000"
+            />
           </div>
           <div className="col-md-12 margin-right">
             <h5 class="my-0 red productNameOfOrder mt-4 margin-right">

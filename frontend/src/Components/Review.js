@@ -40,7 +40,7 @@ export default class Review extends Component {
                 <a href="/" class="">
                   <i class="fa fa-link whiteIcon" aria-hidden="true"></i>
                 </a>
-                <a href="/" class="">
+                <a href="/reportForm" class="">
                   <i
                     class="fa fa-exclamation-triangle whiteIcon"
                     aria-hidden="true"

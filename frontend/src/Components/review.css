@@ -24,6 +24,7 @@
   
   .mgtop {
       margin-top: 40px;
+      box-shadow: 5px 5px 5px 5px black;
   }
 
   a .whiteIcon {

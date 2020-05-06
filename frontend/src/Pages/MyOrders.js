@@ -18,7 +18,6 @@ export default class MyOrders extends Component {
             You have 4 orders on this account{" "}
           </h4>
           <ul class="list-group mb-3">
-              
             <li class="list-group-item text-left  mb-2 mt-4">
               <div>
                 <h5 class="my-0 red productNameOfOrder">
@@ -46,7 +45,13 @@ export default class MyOrders extends Component {
                 <button className="button-order-margin">
                   Close this order
                 </button>
-                <button type="submit" onClick={event =>  window.location.href='/reportForm'} className="button-order-margin">Report</button>
+                <button
+                  type="submit"
+                  onClick={(event) => (window.location.href = "/reportForm")}
+                  className="button-order-margin"
+                >
+                  Report
+                </button>
               </div>
             </li>
 
@@ -77,7 +82,13 @@ export default class MyOrders extends Component {
                 <button className="button-order-margin">
                   Close this order
                 </button>
-                <button type="submit" onClick={event =>  window.location.href='/reportForm'} className="button-order-margin">Report</button>
+                <button
+                  type="submit"
+                  onClick={(event) => (window.location.href = "/reportForm")}
+                  className="button-order-margin"
+                >
+                  Report
+                </button>
               </div>
             </li>
 
@@ -108,7 +119,13 @@ export default class MyOrders extends Component {
                 <button className="button-order-margin">
                   Close this order
                 </button>
-                <button type="submit" onClick={event =>  window.location.href='/reportForm'} className="button-order-margin">Report</button>
+                <button
+                  type="submit"
+                  onClick={(event) => (window.location.href = "/reportForm")}
+                  className="button-order-margin"
+                >
+                  Report
+                </button>
               </div>
             </li>
 
@@ -139,10 +156,15 @@ export default class MyOrders extends Component {
                 <button className="button-order-margin">
                   Close this order
                 </button>
-                <button type="submit" onClick={event =>  window.location.href='/reportForm'} className="button-order-margin">Report</button>
+                <button
+                  type="submit"
+                  onClick={(event) => (window.location.href = "/reportForm")}
+                  className="button-order-margin"
+                >
+                  Report
+                </button>
               </div>
             </li>
-
           </ul>
         </main>
       </div>

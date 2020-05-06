@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./home.css";
+import SearchBox from "../Components/SearchBox";
 import CarouselBox from "../Components/CarouselBox";
 import Ourseller from "../Components/OurSeller";
 import Categories from "../Components/Categories";
@@ -20,10 +21,8 @@ export default class Sellers extends Component {
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="stylesheet" href="css/style.css" />
-        <section class="hero">
-          <div class="hero-one"></div>
-          <div class="hero-two"></div>
-          <h1 class="hero-title"></h1>
+        <section class="hero backImage">
+          <h1 class="hero-title"> Wow, u have a nice search<SearchBox/> </h1>
         </section>
         <section id="music" className="section back">
           <div className="accordion">

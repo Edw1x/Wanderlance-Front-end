@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Ourseller from "./OurSeller";
+import Adminpanel from "./AdminPanel";
 
 import "./userCard.css";
 
@@ -17,11 +18,7 @@ export default class UserCard extends Component {
           </div>
           <div class="back text-center">
             <div className="margin-top">
-              <h2>Admin Panel</h2>
-              <div className="cA">
-                <button type="submit" onClick={event =>  window.location.href=`/userProfile/myProducts/Upload/${this.props.id}`}>Upload a photo</button>
-                <button type="submit" onClick={event =>  window.location.href=`/sellerspage/${this.props.id}`}>Delete this product</button>
-              </div>
+              <Adminpanel/>
               <div className="border border-dark mt-2 mb-2"></div>
               <h2>User menu</h2>
               <div className="cA">
