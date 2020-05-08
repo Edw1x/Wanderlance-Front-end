@@ -9,22 +9,22 @@ export default class OurSeller extends Component {
             class="fir-imageover"
             rel="noopener"
             target="_blank"
-            href="/userProfile"
+            href= {`/userProfile/${this.props.id}`}
           >
             <img
               class="fir-author-image fir-clickcircle"
-              src="https://picsum.photos/200/150/?random"
+              src={this.props.image}
               alt="David East - Author"
             />
             <div class="fir-imageover-color"></div>
             <img
               class="fir-imageover-image fir-clickcircle"
-              src="https://picsum.photos/200/150/?random"
+              src={this.props.image}
             />
           </a>
 
           <figcaption>
-          <div class="fig-author-figure-title white-text red">Igor Chaikovskiy</div>
+    <div class="fig-author-figure-title white-text red">{this.props.username}</div>
             <div class="small grey">
               Last seen 10 min ago
             </div>

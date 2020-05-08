@@ -13,17 +13,20 @@ export default class UserCard extends Component {
           <div class="front">
             <img
               class="userCardImage"
-              src="https://images.pexels.com/photos/3694706/pexels-photo-3694706.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              src={this.props.serviceimage?this.props.serviceimage:"https://images.pexels.com/photos/3694706/pexels-photo-3694706.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"}
             ></img>
           </div>
           <div class="back text-center">
             <div className="margin-top">
-              <Adminpanel/>
-              <div className="border border-dark mt-2 mb-2"></div>
+              {this.props.token?  <Adminpanel
+              id = {this.props.id}/>
+              :<div>
               <h2>User menu</h2>
               <div className="cA">
                 <button type="submit" onClick={event =>  window.location.href=`/sellerspage/${this.props.id}`}>Buy this product</button>
               </div>
+              </div>}
+            
             </div>
           </div>
         </div>
@@ -31,7 +34,10 @@ export default class UserCard extends Component {
           <div class="mr-grid">
             <div class="col1">
                 <h1>{this.props.title}</h1>
-              <Ourseller />
+              <Ourseller
+              id = {this.props.userid}
+              username = {this.props.username}
+              image = {this.props.userimage} />
               <hr className="white" />
             </div>
           </div>

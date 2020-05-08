@@ -44,6 +44,7 @@ export default class routs extends Component {
             <Route exact path="/login" component={Login} />
             <Route exact path="/sellers" component={sellers} />
             <Route exact path="/userProfile" component={userProfile} />
+            <Route exact path="/userProfile/:id" component={userProfile} />
             <Route exact path="/categories/GraphicsandDesign" component={GraphicsAndDesign} />
             <Route exact path="/categories/DigitalMarketing" component={DigitalMarketing} />
             <Route exact path="/categories/Business" component={Business} />
@@ -56,12 +57,12 @@ export default class routs extends Component {
             <Route exact path="/orderproductpage" component={OrderProductPage} />
             <Route exact path="/resetpassword" component={resetpassword} />
             <Route exact path="/resetpasswordConfirm" component={resetpasswordConfirm} />
-            <Route exact path="/userProfile/settings" component={settings} />
-            <Route exact path="/userProfile/myProducts" component={myproducts} />
-            <Route exact path="/userProfile/myProducts/createProduct" component={createproduct} />
-            <Route exact path="/userProfile/myProducts/Upload/:id" component={uploadproductphoto} />
-            <Route exact path="/userProfile/myOrders" component={myorders} />
-            <Route exact path="/userProfile/clientOrders" component={clientorders} />
+            <Route exact path="/settings" component={settings} />
+            <Route exact path="/myProducts" component={myproducts} />
+            <Route exact path="/myProducts/createProduct" component={createproduct} />
+            <Route exact path="/myProducts/Upload/:id" component={uploadproductphoto} />
+            <Route exact path="/myOrders" component={myorders} />
+            <Route exact path="/clientOrders" component={clientorders} />
             <Route exact path="/reportForm" component={reportform} />
           </Switch>
         );

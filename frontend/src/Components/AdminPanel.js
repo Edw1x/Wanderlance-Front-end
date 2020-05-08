@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+const token = localStorage.getItem('Token');
+
 export default class AdminPanel extends Component {
   render() {
     return (
@@ -9,7 +11,7 @@ export default class AdminPanel extends Component {
           <button
             type="submit"
             onClick={(event) =>
-              (window.location.href = `/userProfile/myProducts/Upload/${this.props.id}`)
+              (window.location.href = `/myProducts/Upload/${this.props.id}`)
             }
           >
             Upload a photo
@@ -17,7 +19,13 @@ export default class AdminPanel extends Component {
           <button
             type="submit"
             onClick={(event) =>
-              (window.location.href = `/sellerspage/${this.props.id}`)
+             fetch(`http://localhost:8000/services/${this.props.id}/`,{
+               method: "DELETE",
+               headers:{
+                'Authorization': `Token ${token}`,
+               }
+              
+             }).then(res => window.location.reload(false))
             }
           >
             Delete this product

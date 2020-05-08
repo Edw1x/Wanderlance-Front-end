@@ -100,7 +100,7 @@ export default class SellerPage extends Component {
                   </div>
                   <hr className="white" />
                   <h3>Price</h3>
-                  <h4>{this.state.price} shekelei</h4>
+                  <h4>{this.state.price} $</h4>
                 </div>
                 <hr className="white" />
                 <div className="button-buy">

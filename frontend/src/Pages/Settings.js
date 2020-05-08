@@ -5,7 +5,7 @@ import ImageUploader from "../Components/ImageUploader";
 const token = localStorage.getItem("Token");
 const user = localStorage.getItem("User");
 let isLogined = token ? true : false;
-const url = "http://localhost:8000/media/images/";
+const url = "http://localhost:8000/media";
 
 export default class Settings extends Component {
   constructor(props) {
@@ -33,23 +33,21 @@ export default class Settings extends Component {
   }
   componentDidMount() {
     if (!user)
-      fetch("http://localhost:8000/users/me/", {
-        method: "GET",
+      fetch('http://localhost:8000/users/me/', {
+        method: 'GET',
         headers: {
-          "Content-Type": "application/json",
-          Authorization: `Token ${token}`,
-        },
+          'Content-Type': 'application/json',
+          'Authorization': `Token ${token}`,
+        }
+      }).then(res => res.json()).then(data => {
+        console.log(data);
+        this.setState(data);
+        localStorage.setItem('id', this.state.id);
+        this.setState({ fetched: true });
+        this.setState({ image: data.image[data.image.length - 1].image });
+        localStorage.setItem("User", JSON.stringify(this.state));
+        console.log(this.state);
       })
-        .then((res) => res.json())
-        .then((data) => {
-          console.log(data);
-          if (data.user) {
-            this.setState(data.user);
-            this.setState({ fetched: true });
-            this.setState({ image: data.image.image });
-            console.log(this.state);
-          }
-        });
     else {
       this.setState(JSON.parse(user));
     }
@@ -197,8 +195,8 @@ export default class Settings extends Component {
                           <div class="text-center">
                             <div class="mt-2">
                               <ImageUploader
-                                urlProps={this.props.match.path}
                                 image={this.state.image}
+                                urlProps = {this.props.match.path}
                               />
                             </div>
                             <small>

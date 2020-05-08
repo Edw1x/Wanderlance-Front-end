@@ -4,8 +4,55 @@ import CarouselBox from "../../Components/CarouselBox";
 import SearchBox from "../../Components/SearchBox";
 import Categories from "../../Components/Categories";
 import Footer from "../../Components/Footer";
+import UserCard from "../../Components/UserCard";
+
+let orders;
+const token = localStorage.getItem("Token");
+const url = "http://localhost:8000/media";
+function Generate(){
+  if(orders){
+    orders.sort((o1, o2) =>(o2.price - o1.price))
+      return(<div className = "row col">
+        {orders.map(order => <UserCard
+        title = {order.title}
+        description = {order.description}
+        price = {order.price}
+        id = {order.id}
+        username = {order.owner.username}
+        userimage = {url + order.owner.image[order.owner.image.length - 1].image}
+        serviceimage = {order.image.length>0?url + order.image[order.image.length - 1].image:""}
+        />)}
+      </div>)
+    
+  }
+}
 
 export default class Business extends Component {
+
+  constructor(props){
+    super(props);
+      this.state = {
+        fetched: false
+    };
+  };
+ 
+
+ componentDidMount(){
+   fetch('http://localhost:8000/services/Business/', {
+     method: 'GET',
+     headers: {
+         'Authorization': `Token ${token}`,
+     },
+ }).then(res => {
+     return res.json()
+ }).then(data => {
+   orders = data;
+   this.setState({fetched: true})
+   console.log(orders);
+ })
+
+ }
+
   render() {
     return (
       <div>
@@ -85,10 +132,7 @@ export default class Business extends Component {
             <section id="video" className="section bg-grey mg-top">
               <h1-1>Business</h1-1>
             </section>
-            <CarouselBox />
-            <CarouselBox />
-            <CarouselBox />
-            <CarouselBox />
+            {this.state.fetched?<Generate></Generate>:""}
           </div>
         </section>
         <Footer />

@@ -6,7 +6,7 @@ import UserCard from "../Components/UserCard";
 
 const token = localStorage.getItem("Token");
 let orders;
-
+const url = "http://localhost:8000/media";
 function Generate(){
   if(orders){
       return(<div className = "row col">
@@ -15,6 +15,10 @@ function Generate(){
         description = {order.description}
         price = {order.price}
         id = {order.id}
+        username = {order.owner.username}
+        userimage = {url + order.owner.image[order.owner.image.length - 1].image}
+        serviceimage = {order.image.length>0?url + order.image[order.image.length - 1].image:""}
+        token = {token}
         />)}
       </div>)
     
@@ -53,7 +57,7 @@ export default class MyProducts extends Component {
         </div>
         <main>
         <h4 class="card-title mb-0 text-center"> {orders?`You have ${orders.length} products on this account` :""} </h4>
-        <button type="submit" onClick={(event) => (window.location.href = "/userProfile/myProducts/createProduct")}>Create product</button>
+        <button type="submit" onClick={(event) => (window.location.href = "/myProducts/createProduct")}>Create product</button>
         
           {this.state.fetched?<Generate></Generate>:""}
 

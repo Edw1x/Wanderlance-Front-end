@@ -6,7 +6,7 @@ import "./header.css";
 
 const token = localStorage.getItem('Token');
 let isLogined = token ? true : false;
-const url = "http://localhost:8000/media/images/"
+const url = "http://localhost:8000/media"
 
 function LogedinUser(props){
   return(
@@ -72,11 +72,11 @@ function LogedinUser(props){
                     </figure>
                   </div>
                   <div class="dropdown-divider"></div>
-                  <Link to="/userProfile/myorders" class="dropdown-item colorLink">
+                  <Link to="/myorders" class="dropdown-item colorLink">
                     <i class="fa fa-shopping-cart iconRed"aria-hidden="true"></i>
                     My orders
                   </Link>
-                  <Link to="/userProfile/myproducts" class="dropdown-item colorLink">
+                  <Link to="/myproducts" class="dropdown-item colorLink">
                     <i class="fa fa-money iconRed" aria-hidden="true"></i>
                     My products
                   </Link>
@@ -84,12 +84,12 @@ function LogedinUser(props){
                     <i class="fa fa-comment iconRed" aria-hidden="true"></i>
                     Messages
                   </a>
-                  <Link to="/userProfile/settings" class="dropdown-item colorLink">
+                  <Link to="/settings" class="dropdown-item colorLink">
                     <i class="fa fa-cog iconRed" aria-hidden="true"></i>
                     Settings
                   </Link>
                   <div class="dropdown-divider"></div>
-                  <Link to="/userProfile/clientOrders" class="dropdown-item colorLink">
+                  <Link to="/clientOrders" class="dropdown-item colorLink">
                     <i class="fa fa-user iconRed"aria-hidden="true"></i>
                     Client orders
                   </Link>
@@ -147,10 +147,10 @@ export default class Header extends Component {
         }
       }).then(res => res.json()).then(data => {
         console.log(data);
-        this.setState(data.user);
+        this.setState(data);
     localStorage.setItem('id', this.state.id);
         this.setState({ fetched: true });
-        this.setState({image: data.image.image});
+        this.setState({image: data.image[data.image.length-1].image});
         localStorage.setItem("User", JSON.stringify(this.state));
         console.log(this.state);
       })

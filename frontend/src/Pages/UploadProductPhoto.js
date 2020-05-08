@@ -10,59 +10,45 @@ import ImageUploader from "../Components/ImageUploader";
 
 const token = localStorage.getItem("Token");
 let isLogined = token ? true : false;
-const url = "http://localhost:8000/media/images/";
+const url = "http://localhost:8000/media";
 
 export default class UploadProductPhoto extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      id: null,
-      username: "",
-      first_name: "",
-      last_name: "",
-      last_login: null,
-      date_joined: null,
-      fetched: false,
-      image: null,
+    id: null,
+       title: null,
+      description: null,
+      price: null,
+      date: null,
+      category: {
+        name: null,
+        description: null,
+      },
+      owner: null,
+      fetched: false
     };
   }
 
-  logOut = (e) => {
-    e.preventDefault();
-    fetch("http://localhost:8000/auth/logout/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Token ${token}`,
-      },
-    }).then((res) => {
-      localStorage.removeItem("Token");
-      localStorage.removeItem("User");
-      window.location.reload(false);
-      return res.json();
-    });
-  };
-
   componentDidMount() {
     if (isLogined) {
-      fetch("http://localhost:8000/users/me/", {
+
+      const { id } = this.props.match.params
+      fetch(`http://localhost:8000/services/${id}/`, {
         method: "GET",
         headers: {
-          "Content-Type": "application/json",
           Authorization: `Token ${token}`,
         },
       })
         .then((res) => res.json())
         .then((data) => {
           console.log(data);
-          this.setState(data.user);
-          localStorage.setItem("id", this.state.id);
-          this.setState({ fetched: true });
-          this.setState({ image: data.image.image });
-          localStorage.setItem("User", JSON.stringify(this.state));
+          this.setState(data);
           console.log(this.state);
+          this.setState({ fetched: true })
         });
+
     }
   }
   render() {
@@ -75,42 +61,49 @@ export default class UploadProductPhoto extends Component {
           <div className="text-center col-12">
             <h2 class="card-title mb-0 text-center">Title photo</h2>
             <div className="flex">
-            <UserCard
-          title="Template title"
-          description="Hi, we are Wanderlance team, thanks for coming today here, have a nice day. Here is a template description"
-          price="100000"
-        />
-          </div>
+              <UserCard
+                title={this.state.title}
+                description={this.state.description}
+                price={this.state.price}
+                username={this.state.owner ? this.state.owner.username : ""}
+                userimage={this.state.owner ? url + this.state.owner.image[this.state.owner.image.length - 1].image : ""}
+              />
+            </div>
             <div>
-              <img
+              {/* <img
                 class="mt-3 col-md-6"
-                src={this.state.image ? url + this.state.image : ""}
+                src={this.state.owner ?url + this.state.owner.image[this.state.owner.image.length - 1].image : ""}
                 width="100%"
                 height="100%"
-              />
-                            <div class="mt-2">
-              <p className="text-white">Choose title photo</p>
+              /> */}
+              <div class="mt-2">
+                <p className="text-white">Choose title photo</p>
               </div>
-              <ImageUploader />
+              <ImageUploader
+                urlProps={this.props.match.path}
+                image={this.state.owner ? this.state.owner.image[this.state.owner.image.length - 1].image : ""}
+                service= {this.state.id} />
             </div>
           </div>
         </main>
         <div className="text-center col-md-12">
-            <div className="border border-dark row mt-2 mb-2"></div>
-            <h2 class="card-title mb-0 text-center">Product photo</h2>
-            <div>
-              <img
+          <div className="border border-dark row mt-2 mb-2"></div>
+          <h2 class="card-title mb-0 text-center">Product photo</h2>
+          <div>
+            {/* <img
                 class="mt-3"
-                src={this.state.image ? url + this.state.image : ""}
+                src={this.state.owner ?url + this.state.owner.image[this.state.owner.image.length - 1].image : ""}
                 width="100%"
                 height="100%"
-              />
-              <div class="mt-2">
+              /> */}
+            <div class="mt-2">
               <p className="text-white">Choose product photo</p>
-                <ImageUploader />
-              </div>
+              <ImageUploader
+                image={this.state.owner ? this.state.owner.image[this.state.owner.image.length - 1].image : ""}
+                service= {this.state.id} />
             </div>
           </div>
+        </div>
       </div>
     );
   }

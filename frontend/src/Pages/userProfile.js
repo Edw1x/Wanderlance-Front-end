@@ -8,7 +8,7 @@ import Review from "../Components/Review.js";
 const token = localStorage.getItem("Token");
 const user = localStorage.getItem("User");
 let isLogined = token ? true : false;
-const url = "http://localhost:8000/media/images/";
+const url = "http://localhost:8000/media";
 
 export default class userProfile extends Component {
   constructor(props) {
@@ -32,8 +32,30 @@ export default class userProfile extends Component {
     }
   }
   componentDidMount() {
-    if (!user)
-      fetch("http://localhost:8000/users/me/", {
+    const { id } = this.props.match.params;
+    if (!id) {
+      if (!user)
+        fetch("http://localhost:8000/users/me/", {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Token ${token}`,
+          },
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            this.setState(data);
+            this.setState({ fetched: true });
+            this.setState({ image: data.image[data.image.length - 1].image });
+            console.log(this.state);
+          });
+      else {
+        this.setState(JSON.parse(user));
+      }
+    }
+    else {
+      fetch(`http://localhost:8000/users/${id}/`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -43,13 +65,11 @@ export default class userProfile extends Component {
         .then((res) => res.json())
         .then((data) => {
           console.log(data);
-          this.setState(data.user);
+          this.setState(data);
           this.setState({ fetched: true });
-          this.setState({ image: data.image.image });
+          this.setState({ image: data.image[data.image.length - 1].image });
           console.log(this.state);
         });
-    else {
-      this.setState(JSON.parse(user));
     }
   }
 
@@ -167,7 +187,7 @@ export default class userProfile extends Component {
                   </div>
 
                   <div
-                    class="tab-pane fade show active"
+                    class="tab-pane fade"
                     id="Reviews"
                     role="tabpanel"
                   >
