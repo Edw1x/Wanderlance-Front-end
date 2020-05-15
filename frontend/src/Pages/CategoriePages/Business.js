@@ -18,8 +18,8 @@ function Generate(){
         description = {order.description}
         price = {order.price}
         id = {order.id}
-        username = {order.owner.username}
         userimage = {url + order.owner.image[order.owner.image.length - 1].image}
+        username = {order.owner.username}
         serviceimage = {order.image.length>0?url + order.image[order.image.length - 1].image:""}
         />)}
       </div>)

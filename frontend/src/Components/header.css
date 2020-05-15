@@ -29,6 +29,7 @@
   height:60px;
   position: relative;
   left: -5%;
+  margin: 10px;
 }
 
 .fir-circle {
@@ -100,4 +101,7 @@ hr.white{
 
 .logoNameMargin {
   margin-top: 20px;
+}
+
+@media screen and (max-width: 350px) {
 }

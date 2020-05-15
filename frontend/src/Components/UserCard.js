@@ -22,6 +22,7 @@ export default class UserCard extends Component {
               id = {this.props.id}/>
               :<div>
               <h2>User menu</h2>
+              <p className="text-white text-center">Clicking on the button below will move you to the current product.</p>
               <div className="cA">
                 <button type="submit" onClick={event =>  window.location.href=`/sellerspage/${this.props.id}`}>Buy this product</button>
               </div>

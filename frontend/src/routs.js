@@ -24,7 +24,7 @@ import Register from "./Pages/LoginandRegister/Register";
 import resetpassword from "./Pages/LoginandRegister/Resetpassword";
 import resetpasswordConfirm from "./Pages/LoginandRegister/ResetpasswordConfirm";
 
-//Pages
+//Categories
 import GraphicsAndDesign from "./Pages/CategoriePages/GraphicsAndDesign";
 import DigitalMarketing from "./Pages/CategoriePages/DigitalMarketing";
 import Business from "./Pages/CategoriePages/Business";

@@ -14,7 +14,6 @@ export default class OurSeller extends Component {
             <img
               class="fir-author-image fir-clickcircle"
               src={this.props.image}
-              alt="David East - Author"
             />
             <div class="fir-imageover-color"></div>
             <img

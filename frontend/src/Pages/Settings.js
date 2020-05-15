@@ -191,7 +191,7 @@ export default class Settings extends Component {
                             ></textarea>
                           </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col">
                           <div class="text-center">
                             <div class="mt-2">
                               <ImageUploader

@@ -142,8 +142,33 @@ export default class Home extends Component {
           <button className="" type="submit" onClick={event =>  window.location.href='/login'}>Add comment</button>
           <button className="" type="submit" onClick={event =>  window.location.href='/login'}>Share</button>
         </div>
-        </div>
+        <div class="container">
+        <img src="https://images.pexels.com/photos/3693700/pexels-photo-3693700.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Avatar"/>
+        <p>Hi, i sent you some photos</p>
+        <span class="time-right">11:00</span>
+      </div>
       
+      <div class="container darker">
+        <img src="https://images.pexels.com/photos/3693700/pexels-photo-3693700.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Avatar" class="right"/>
+        <p>Hi, ok, i will send you the result in 2 days, its ok?</p>
+        <span class="time-left">11:01</span>
+      </div>
+      
+      <div class="container">
+        <img src="https://images.pexels.com/photos/3693700/pexels-photo-3693700.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Avatar"/>
+        <p>ok, sweet!</p>
+        <span class="time-right">11:02</span>
+      </div>
+      
+      <div class="container darker">
+        <img src="https://images.pexels.com/photos/3693700/pexels-photo-3693700.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Avatar" class="right"/>
+        <p>Here is the result</p>
+        <p>image1.png</p>
+        <p>image2.png</p>
+        <span class="time-left">23:51</span>
+      </div>
+        </div>
+        
     );
   }
 }
