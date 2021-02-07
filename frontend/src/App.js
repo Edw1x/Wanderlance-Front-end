@@ -1,15 +1,16 @@
-import React from 'react';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Components/Header";
 import Route from "./routs";
-
-function App() 
-{
+import {BrowserRouter} from "react-router-dom";
+function App() {
   return (
     <div>
+      <BrowserRouter>
       <Header />
-      <Route/>
+        <Route />
+      </BrowserRouter>
     </div>
   );
 }

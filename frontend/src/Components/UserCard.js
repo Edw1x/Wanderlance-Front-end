@@ -49,13 +49,14 @@ export default class UserCard extends Component {
             <div class="col2">
               <ul class="userRating">
                 <li>
-                  <i class="material-icons">&#128970;</i>
-                  <i class="material-icons">&#128970;</i>
-                  <i class="material-icons">&#128970;</i>
-                  <i class="material-icons">&#128970;</i>
+                  {/* <i class="material-icons">&#128970;</i> */}
+                  <i class="material-icons">&#10032;</i>
+                  <i class="material-icons">&#10032;</i>
+                  <i class="material-icons">&#10032;</i>
+                  <i class="material-icons">&#10032;</i>
                   <i class="material-icons">&#10032;</i>
                 </li>
-                <li>4</li>
+                <li>0.0</li>
               </ul>
             </div>
           </div>
@@ -71,7 +72,7 @@ export default class UserCard extends Component {
           </div>
           <div class="mr-grid">
               <div class="col1">
-                <p class="userCardReviews">15 reviews on this product</p>
+                <p class="userCardReviews">no reviews for this product yet</p>
               </div>
             </div>
             <div class="mr-grid">

@@ -68,7 +68,7 @@ export default class Business extends Component {
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="stylesheet" href="css/style.css" />
         <section class="hero backImage">
-          <h1 class="hero-title"> Wow, u have a nice search<SearchBox/> </h1>
+          <h1 class="hero-title"> Search any service you interested in<SearchBox/> </h1>
         </section>
         <section id="music" className="section back">
           <div style={{ color: "white" }} className="text-center">

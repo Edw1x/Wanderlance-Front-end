@@ -1,0 +1,1986 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `ShallowWrapper {}`;
+
+exports[`HeaderComponent Header container initial should render a label 1`] = `ShallowWrapper {}`;
+
+exports[`HeaderComponent Header container initial should render an a 1`] = `ShallowWrapper {}`;
+
+exports[`HeaderComponent Header container initial should render an icon 1`] = `ShallowWrapper {}`;
+
+exports[`HeaderComponent should render a p 1`] = `ShallowWrapper {}`;
+
+exports[`HeaderComponent should render a p block 1`] = `ShallowWrapper {}`;
+
+exports[`HeaderComponent should render an a 1`] = `ShallowWrapper {}`;
+
+exports[`HeaderComponent should render an icon 1`] = `ShallowWrapper {}`;
+
+exports[`HeaderComponent should render an icon 2`] = `ShallowWrapper {}`;
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <nav
+      class="navbar-custom sticky-top navbar navbar-expand-md navbar-dark"
+    >
+      <div
+        class="container"
+      >
+        <a
+          class="navbar-brand"
+          href="/"
+        >
+          WanderLance
+        </a>
+        <button
+          aria-controls="responsive-navbar-nav"
+          aria-label="Toggle navigation"
+          class="navbar-toggler collapsed"
+          type="button"
+        >
+          <span
+            class="navbar-toggler-icon"
+          />
+        </button>
+        <div
+          class="navbar-collapse collapse"
+          id="responsive-navbar-nav"
+        >
+          <div
+            class="mr-auto navbar-nav"
+          >
+            <a
+              class="nav-link"
+              href="/"
+            >
+               Home 
+            </a>
+            <a
+              class="nav-link"
+              href="/test"
+            >
+               Test 
+            </a>
+            <a
+              class="nav-link"
+              href="/sellers"
+            >
+               Sellers 
+            </a>
+            <a
+              class="nav-link"
+              href="/contacts"
+            >
+               Contacts 
+            </a>
+            <a
+              class="nav-link"
+              href="/login"
+            >
+               Login 
+            </a>
+          </div>
+          <div
+            class="cA"
+          >
+            <button
+              type="submit"
+            >
+              Click here to enter your account
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <meta
+        charset="UTF-8"
+      />
+      <meta
+        content="width=device-width, initial-scale=1.0"
+        name="viewport"
+      />
+      <meta
+        content="ie=edge"
+        http-equiv="X-UA-Compatible"
+      />
+      <link
+        crossorigin="anonymous"
+        href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        rel="stylesheet"
+      />
+      <link
+        href="/favicon.ico"
+        rel="shortcut icon"
+        type="image/x-icon"
+      />
+      <link
+        href="css/style.css"
+        rel="stylesheet"
+      />
+      <title>
+        Welcome to myTunes
+      </title>
+      <div
+        id="showcase"
+      >
+        <div
+          class="section-main container"
+        >
+          <h1
+            class="projectName"
+          >
+            WanderLance
+          </h1>
+          <h2
+            class="titleUnderName"
+          >
+            Site for people that want to become a freelancer or make an order.
+          </h2>
+          <p
+            class="hide-on-small red"
+          >
+            Enjoy the time you spend here
+          </p>
+        </div>
+      </div>
+      <section
+        class="hero"
+      >
+        <div
+          class="hero-one"
+        >
+          <h1-1>
+            BUY
+          </h1-1>
+          <ul
+            class="white-text"
+          >
+            <li>
+              1 million orders sold
+            </li>
+            <li>
+              25 million people with us
+            </li>
+            <li>
+              5 thound world wide partners
+            </li>
+          </ul>
+          <img
+            class="imageOnHeroSize"
+            src="https://icons.iconarchive.com/icons/inipagi/business-economic/1024/graph-icon.png"
+          />
+        </div>
+        <div
+          class="hero-two"
+        >
+          <h1-1>
+            SELL
+          </h1-1>
+          <ul
+            class="white-text"
+          >
+            <li>
+              1 million orders sold
+            </li>
+            <li>
+              25 million people with us
+            </li>
+            <li>
+              5 thound world wide partners
+            </li>
+          </ul>
+          <img
+            class="imageOnHeroSize"
+            src="https://icons.iconarchive.com/icons/inipagi/business-economic/1024/graph-icon.png"
+          />
+        </div>
+      </section>
+      <section
+        class="section back"
+        id="sellers"
+      >
+        <div
+          class="container col"
+        >
+          <h2
+            class="section-head text-center"
+          >
+            Sellers
+          </h2>
+          <h4
+            class="text-center text"
+          >
+            45 million sellers with us now. Zero ads.
+          </h4>
+          <section
+            class="container row col"
+          >
+            <div
+              class="userCardContainer"
+            >
+              <div
+                class="rightGradientAfterFlip"
+              >
+                <div
+                  class="flip"
+                >
+                  <div
+                    class="front"
+                  >
+                    <img
+                      class="userCardImage"
+                      src="https://images.pexels.com/photos/3694706/pexels-photo-3694706.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    />
+                  </div>
+                  <div
+                    class="back text-center"
+                  >
+                    <div
+                      class="margin-top"
+                    >
+                      <div>
+                        <h2>
+                          User menu
+                        </h2>
+                        <p
+                          class="text-white text-center"
+                        >
+                          Clicking on the button below will move you to the current product.
+                        </p>
+                        <div
+                          class="cA"
+                        >
+                          <button
+                            type="submit"
+                          >
+                            Buy this product
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="text-card-cont"
+                >
+                  <div
+                    class="mr-grid"
+                  >
+                    <div
+                      class="col1"
+                    >
+                      <h1>
+                        Template title
+                      </h1>
+                      <div>
+                        <figure
+                          class="fir-image-figure"
+                        >
+                          <a
+                            class="fir-imageover"
+                            href="/userProfile/undefined"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            <img
+                              class="fir-author-image fir-clickcircle"
+                            />
+                            <div
+                              class="fir-imageover-color"
+                            />
+                            <img
+                              class="fir-imageover-image fir-clickcircle"
+                            />
+                          </a>
+                          <figcaption>
+                            <div
+                              class="fig-author-figure-title white-text red"
+                            />
+                            <div
+                              class="small grey"
+                            >
+                              Last seen 0 min ago
+                            </div>
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <hr
+                        class="white"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="mr-grid rating-margin"
+                  >
+                    <div
+                      class="col2"
+                    >
+                      <h5>
+                        Rating
+                      </h5>
+                    </div>
+                    <div
+                      class="col2"
+                    >
+                      <ul
+                        class="userRating"
+                      >
+                        <li>
+                          <i
+                            class="material-icons"
+                          >
+                            ✰
+                          </i>
+                          <i
+                            class="material-icons"
+                          >
+                            ✰
+                          </i>
+                          <i
+                            class="material-icons"
+                          >
+                            ✰
+                          </i>
+                          <i
+                            class="material-icons"
+                          >
+                            ✰
+                          </i>
+                          <i
+                            class="material-icons"
+                          >
+                            ✰
+                          </i>
+                        </li>
+                        <li>
+                          0.0
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    class="mr-grid"
+                  >
+                    <div
+                      class="col1 "
+                    >
+                      <p
+                        class="userCardDescription module"
+                      >
+                        Hi, we are Wanderlance team, thanks for coming today here, have a nice day. Here is a template descr
+                      </p>
+                    </div>
+                  </div>
+                  <div />
+                  <div
+                    class="mr-grid"
+                  >
+                    <div
+                      class="col1"
+                    >
+                      <p
+                        class="userCardReviews"
+                      >
+                        no reviews for this product yet
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="mr-grid"
+                  >
+                    <div
+                      class=""
+                    >
+                      <div
+                        class="priceBorder"
+                      >
+                        <h3>
+                          <i
+                            class="material-icons"
+                          >
+                            
+                          </i>
+                           PRICE:
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      class="priceSection"
+                    >
+                      <h6>
+                        100000
+                        <i
+                          class="material-icons"
+                        >
+                           $
+                        </i>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="userCardContainer"
+            >
+              <div
+                class="rightGradientAfterFlip"
+              >
+                <div
+                  class="flip"
+                >
+                  <div
+                    class="front"
+                  >
+                    <img
+                      class="userCardImage"
+                      src="https://images.pexels.com/photos/3694706/pexels-photo-3694706.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    />
+                  </div>
+                  <div
+                    class="back text-center"
+                  >
+                    <div
+                      class="margin-top"
+                    >
+                      <div>
+                        <h2>
+                          User menu
+                        </h2>
+                        <p
+                          class="text-white text-center"
+                        >
+                          Clicking on the button below will move you to the current product.
+                        </p>
+                        <div
+                          class="cA"
+                        >
+                          <button
+                            type="submit"
+                          >
+                            Buy this product
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="text-card-cont"
+                >
+                  <div
+                    class="mr-grid"
+                  >
+                    <div
+                      class="col1"
+                    >
+                      <h1>
+                        Template title
+                      </h1>
+                      <div>
+                        <figure
+                          class="fir-image-figure"
+                        >
+                          <a
+                            class="fir-imageover"
+                            href="/userProfile/undefined"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            <img
+                              class="fir-author-image fir-clickcircle"
+                            />
+                            <div
+                              class="fir-imageover-color"
+                            />
+                            <img
+                              class="fir-imageover-image fir-clickcircle"
+                            />
+                          </a>
+                          <figcaption>
+                            <div
+                              class="fig-author-figure-title white-text red"
+                            />
+                            <div
+                              class="small grey"
+                            >
+                              Last seen 0 min ago
+                            </div>
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <hr
+                        class="white"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="mr-grid rating-margin"
+                  >
+                    <div
+                      class="col2"
+                    >
+                      <h5>
+                        Rating
+                      </h5>
+                    </div>
+                    <div
+                      class="col2"
+                    >
+                      <ul
+                        class="userRating"
+                      >
+                        <li>
+                          <i
+                            class="material-icons"
+                          >
+                            ✰
+                          </i>
+                          <i
+                            class="material-icons"
+                          >
+                            ✰
+                          </i>
+                          <i
+                            class="material-icons"
+                          >
+                            ✰
+                          </i>
+                          <i
+                            class="material-icons"
+                          >
+                            ✰
+                          </i>
+                          <i
+                            class="material-icons"
+                          >
+                            ✰
+                          </i>
+                        </li>
+                        <li>
+                          0.0
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    class="mr-grid"
+                  >
+                    <div
+                      class="col1 "
+                    >
+                      <p
+                        class="userCardDescription module"
+                      >
+                        Hi, we are Wanderlance team, thanks for coming today here, have a nice day. Here is a template descr
+                      </p>
+                    </div>
+                  </div>
+                  <div />
+                  <div
+                    class="mr-grid"
+                  >
+                    <div
+                      class="col1"
+                    >
+                      <p
+                        class="userCardReviews"
+                      >
+                        no reviews for this product yet
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="mr-grid"
+                  >
+                    <div
+                      class=""
+                    >
+                      <div
+                        class="priceBorder"
+                      >
+                        <h3>
+                          <i
+                            class="material-icons"
+                          >
+                            
+                          </i>
+                           PRICE:
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      class="priceSection"
+                    >
+                      <h6>
+                        100000
+                        <i
+                          class="material-icons"
+                        >
+                           $
+                        </i>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="userCardContainer"
+            >
+              <div
+                class="rightGradientAfterFlip"
+              >
+                <div
+                  class="flip"
+                >
+                  <div
+                    class="front"
+                  >
+                    <img
+                      class="userCardImage"
+                      src="https://images.pexels.com/photos/3694706/pexels-photo-3694706.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    />
+                  </div>
+                  <div
+                    class="back text-center"
+                  >
+                    <div
+                      class="margin-top"
+                    >
+                      <div>
+                        <h2>
+                          User menu
+                        </h2>
+                        <p
+                          class="text-white text-center"
+                        >
+                          Clicking on the button below will move you to the current product.
+                        </p>
+                        <div
+                          class="cA"
+                        >
+                          <button
+                            type="submit"
+                          >
+                            Buy this product
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="text-card-cont"
+                >
+                  <div
+                    class="mr-grid"
+                  >
+                    <div
+                      class="col1"
+                    >
+                      <h1>
+                        Template title
+                      </h1>
+                      <div>
+                        <figure
+                          class="fir-image-figure"
+                        >
+                          <a
+                            class="fir-imageover"
+                            href="/userProfile/undefined"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            <img
+                              class="fir-author-image fir-clickcircle"
+                            />
+                            <div
+                              class="fir-imageover-color"
+                            />
+                            <img
+                              class="fir-imageover-image fir-clickcircle"
+                            />
+                          </a>
+                          <figcaption>
+                            <div
+                              class="fig-author-figure-title white-text red"
+                            />
+                            <div
+                              class="small grey"
+                            >
+                              Last seen 0 min ago
+                            </div>
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <hr
+                        class="white"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="mr-grid rating-margin"
+                  >
+                    <div
+                      class="col2"
+                    >
+                      <h5>
+                        Rating
+                      </h5>
+                    </div>
+                    <div
+                      class="col2"
+                    >
+                      <ul
+                        class="userRating"
+                      >
+                        <li>
+                          <i
+                            class="material-icons"
+                          >
+                            ✰
+                          </i>
+                          <i
+                            class="material-icons"
+                          >
+                            ✰
+                          </i>
+                          <i
+                            class="material-icons"
+                          >
+                            ✰
+                          </i>
+                          <i
+                            class="material-icons"
+                          >
+                            ✰
+                          </i>
+                          <i
+                            class="material-icons"
+                          >
+                            ✰
+                          </i>
+                        </li>
+                        <li>
+                          0.0
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    class="mr-grid"
+                  >
+                    <div
+                      class="col1 "
+                    >
+                      <p
+                        class="userCardDescription module"
+                      >
+                        Hi, we are Wanderlance team, thanks for coming today here, have a nice day. Here is a template descr
+                      </p>
+                    </div>
+                  </div>
+                  <div />
+                  <div
+                    class="mr-grid"
+                  >
+                    <div
+                      class="col1"
+                    >
+                      <p
+                        class="userCardReviews"
+                      >
+                        no reviews for this product yet
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="mr-grid"
+                  >
+                    <div
+                      class=""
+                    >
+                      <div
+                        class="priceBorder"
+                      >
+                        <h3>
+                          <i
+                            class="material-icons"
+                          >
+                            
+                          </i>
+                           PRICE:
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      class="priceSection"
+                    >
+                      <h6>
+                        100000
+                        <i
+                          class="material-icons"
+                        >
+                           $
+                        </i>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="userCardContainer"
+            >
+              <div
+                class="rightGradientAfterFlip"
+              >
+                <div
+                  class="flip"
+                >
+                  <div
+                    class="front"
+                  >
+                    <img
+                      class="userCardImage"
+                      src="https://images.pexels.com/photos/3694706/pexels-photo-3694706.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    />
+                  </div>
+                  <div
+                    class="back text-center"
+                  >
+                    <div
+                      class="margin-top"
+                    >
+                      <div>
+                        <h2>
+                          User menu
+                        </h2>
+                        <p
+                          class="text-white text-center"
+                        >
+                          Clicking on the button below will move you to the current product.
+                        </p>
+                        <div
+                          class="cA"
+                        >
+                          <button
+                            type="submit"
+                          >
+                            Buy this product
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="text-card-cont"
+                >
+                  <div
+                    class="mr-grid"
+                  >
+                    <div
+                      class="col1"
+                    >
+                      <h1>
+                        Template title
+                      </h1>
+                      <div>
+                        <figure
+                          class="fir-image-figure"
+                        >
+                          <a
+                            class="fir-imageover"
+                            href="/userProfile/undefined"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            <img
+                              class="fir-author-image fir-clickcircle"
+                            />
+                            <div
+                              class="fir-imageover-color"
+                            />
+                            <img
+                              class="fir-imageover-image fir-clickcircle"
+                            />
+                          </a>
+                          <figcaption>
+                            <div
+                              class="fig-author-figure-title white-text red"
+                            />
+                            <div
+                              class="small grey"
+                            >
+                              Last seen 0 min ago
+                            </div>
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <hr
+                        class="white"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="mr-grid rating-margin"
+                  >
+                    <div
+                      class="col2"
+                    >
+                      <h5>
+                        Rating
+                      </h5>
+                    </div>
+                    <div
+                      class="col2"
+                    >
+                      <ul
+                        class="userRating"
+                      >
+                        <li>
+                          <i
+                            class="material-icons"
+                          >
+                            ✰
+                          </i>
+                          <i
+                            class="material-icons"
+                          >
+                            ✰
+                          </i>
+                          <i
+                            class="material-icons"
+                          >
+                            ✰
+                          </i>
+                          <i
+                            class="material-icons"
+                          >
+                            ✰
+                          </i>
+                          <i
+                            class="material-icons"
+                          >
+                            ✰
+                          </i>
+                        </li>
+                        <li>
+                          0.0
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    class="mr-grid"
+                  >
+                    <div
+                      class="col1 "
+                    >
+                      <p
+                        class="userCardDescription module"
+                      >
+                        Hi, we are Wanderlance team, thanks for coming today here, have a nice day. Here is a template descr
+                      </p>
+                    </div>
+                  </div>
+                  <div />
+                  <div
+                    class="mr-grid"
+                  >
+                    <div
+                      class="col1"
+                    >
+                      <p
+                        class="userCardReviews"
+                      >
+                        no reviews for this product yet
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="mr-grid"
+                  >
+                    <div
+                      class=""
+                    >
+                      <div
+                        class="priceBorder"
+                      >
+                        <h3>
+                          <i
+                            class="material-icons"
+                          >
+                            
+                          </i>
+                           PRICE:
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      class="priceSection"
+                    >
+                      <h6>
+                        100000
+                        <i
+                          class="material-icons"
+                        >
+                           $
+                        </i>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section
+        class="section bg-grey"
+        id="categories"
+      >
+        <h1-1>
+          Categories
+        </h1-1>
+        <div>
+          <section
+            id="timeline"
+          >
+            <div
+              class="tl-item"
+            >
+              <div
+                class="tl-bg"
+              >
+                <img
+                  src="https://images.pexels.com/photos/273222/pexels-photo-273222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                />
+              </div>
+              <div
+                class="tl-year"
+              >
+                <p
+                  class="f2 heading--sanSerif"
+                >
+                  Graphics & Design
+                </p>
+              </div>
+              <div
+                class="tl-content"
+              >
+                <p>
+                  Find any order by this categorie. Any product u can imagine is here.
+                </p>
+                <a
+                  class="text categoryLink"
+                  href="/categories/GraphicsandDesign"
+                >
+                   See more
+                </a>
+              </div>
+            </div>
+            <div
+              class="tl-item"
+            >
+              <div
+                class="tl-bg"
+              >
+                <img
+                  src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                />
+              </div>
+              <div
+                class="tl-year"
+              >
+                <p
+                  class="f2 heading--sanSerif"
+                >
+                  Digital Marketing
+                </p>
+              </div>
+              <div
+                class="tl-content"
+              >
+                <p>
+                  Find any order by this categorie. Any product u can imagine is here.
+                </p>
+                <a
+                  class="text categoryLink"
+                  href="/categories/DigitalMarketing"
+                >
+                   See more
+                </a>
+              </div>
+            </div>
+            <div
+              class="tl-item"
+            >
+              <div
+                class="tl-bg"
+              >
+                <img
+                  src="https://images.pexels.com/photos/3059747/pexels-photo-3059747.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                />
+              </div>
+              <div
+                class="tl-year"
+              >
+                <p
+                  class="f2 heading--sanSerif"
+                >
+                  Writing & Translation
+                </p>
+              </div>
+              <div
+                class="tl-content"
+              >
+                <p>
+                  Find any order by this categorie. Any product u can imagine is here.
+                </p>
+                <a
+                  class="text categoryLink"
+                  href="/categories/WritingAndTranslation"
+                >
+                   See more
+                </a>
+              </div>
+            </div>
+            <div
+              class="tl-item"
+            >
+              <div
+                class="tl-bg"
+              >
+                <img
+                  src="https://images.pexels.com/photos/66134/pexels-photo-66134.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                />
+              </div>
+              <div
+                class="tl-year"
+              >
+                <p
+                  class="f2 heading--sanSerif"
+                >
+                  Video & Animation
+                </p>
+              </div>
+              <div
+                class="tl-content"
+              >
+                <p>
+                  Find any order by this categorie. Any product u can imagine is here.
+                </p>
+                <a
+                  class="text categoryLink"
+                  href="/categories/VideoAndAnimation"
+                >
+                   See more
+                </a>
+              </div>
+            </div>
+            <div
+              class="tl-item"
+            >
+              <div
+                class="tl-bg"
+              >
+                <img
+                  src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                />
+              </div>
+              <div
+                class="tl-year"
+              >
+                <p
+                  class="f2 heading--sanSerif"
+                >
+                  Music & Audio
+                </p>
+              </div>
+              <div
+                class="tl-content"
+              >
+                <p>
+                  Find any order by this categorie. Any product u can imagine is here.
+                </p>
+                <a
+                  class="text categoryLink"
+                  href="/categories/MusicAndAudio"
+                >
+                   See more
+                </a>
+              </div>
+            </div>
+            <div
+              class="tl-item"
+            >
+              <div
+                class="tl-bg"
+              >
+                <img
+                  src="https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                />
+              </div>
+              <div
+                class="tl-year"
+              >
+                <p
+                  class="f2 heading--sanSerif"
+                >
+                  Programming & Tech
+                </p>
+              </div>
+              <div
+                class="tl-content"
+              >
+                <p>
+                  Find any order by this categorie. Any product u can imagine is here.
+                </p>
+                <a
+                  class="text categoryLink"
+                  href="/categories/ProgrammingAndTech"
+                >
+                   See more
+                </a>
+              </div>
+            </div>
+            <div
+              class="tl-item"
+            >
+              <div
+                class="tl-bg"
+              >
+                <img
+                  src="https://images.pexels.com/photos/1181622/pexels-photo-1181622.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                />
+              </div>
+              <div
+                class="tl-year"
+              >
+                <p
+                  class="f2 heading--sanSerif"
+                >
+                  Business
+                </p>
+              </div>
+              <div
+                class="tl-content"
+              >
+                <p>
+                  Find any order by this categorie. Any product u can imagine is here.
+                </p>
+                <a
+                  class="text categoryLink"
+                  href="/categories/Business"
+                >
+                   See more
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div
+          class="cA"
+        >
+          <button
+            type="submit"
+          >
+            Check all hot deals
+          </button>
+          <div
+            class="grey"
+          >
+            <a
+              href="#"
+            >
+              Want to look for all the sellers, click here.
+            </a>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section"
+        id="browse"
+      >
+        <div
+          class="container"
+        >
+          <h1
+            class="text-center text"
+          >
+            Make your own choise.
+          </h1>
+          <div>
+            <div
+              class="content"
+            >
+              <div
+                class="card"
+              >
+                <div
+                  class="icon"
+                >
+                  <i
+                    class="material-icons md-36"
+                  >
+                    attach_money
+                  </i>
+                </div>
+                <p
+                  class="title"
+                >
+                  Sell
+                </p>
+                <a
+                  class="text"
+                  href="#"
+                >
+                  Make your own product
+                </a>
+              </div>
+              <div
+                class="card"
+              >
+                <div
+                  class="icon"
+                >
+                  <i
+                    class="material-icons md-36"
+                  >
+                    storefront
+                  </i>
+                </div>
+                <p
+                  class="title"
+                >
+                  Buy
+                </p>
+                <a
+                  class="text"
+                  href="/sellers"
+                >
+                  Find any product
+                </a>
+              </div>
+              <div
+                class="card"
+              >
+                <div
+                  class="icon"
+                >
+                  <i
+                    class="material-icons md-36"
+                  >
+                    whatshot
+                  </i>
+                </div>
+                <p
+                  class="title"
+                >
+                  Create
+                </p>
+                <a
+                  class="text"
+                  href="#"
+                >
+                  Become the top seller
+                </a>
+              </div>
+              <div
+                class="card"
+              >
+                <div
+                  class="icon"
+                >
+                  <i
+                    class="material-icons md-36"
+                  >
+                    explore
+                  </i>
+                </div>
+                <p
+                  class="title"
+                >
+                  Explore
+                </p>
+                <a
+                  class="text"
+                  href="/sellers"
+                >
+                  Explore the sea of products
+                </a>
+              </div>
+            </div>
+          </div>
+          <p
+            class="white-text text-center"
+          >
+            take your time and think about
+          </p>
+        </div>
+      </section>
+      <section
+        class="section bg-grey"
+        id="F.A.Q"
+      >
+        <div
+          class="container"
+        >
+          <h2>
+             F. A. Q. 
+          </h2>
+          <div
+            class="accordion"
+          >
+            <div
+              class="white-text bg-red"
+              id="accordion"
+            >
+              <div
+                class="faqStorage"
+              >
+                <div
+                  class="card-header"
+                  id="headingOne"
+                >
+                  <h5
+                    class="mb-0"
+                  >
+                    <button
+                      aria-controls="collapseOne"
+                      aria-expanded="true"
+                      class="btn btn-link accordionLink"
+                      data-target="#collapseOne"
+                      data-toggle="collapse"
+                    >
+                      How to use our cite?
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  aria-labelledby="headingOne"
+                  class="collapse show"
+                  data-parent="#accordion"
+                  id="collapseOne"
+                >
+                  <div
+                    class="card-body"
+                  >
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div
+                class="faqStorage"
+              >
+                <div
+                  class="card-header"
+                  id="headingTwo"
+                >
+                  <h5
+                    class="mb-0"
+                  >
+                    <button
+                      aria-controls="collapseTwo"
+                      aria-expanded="false"
+                      class="btn btn-link collapsed accordionLink"
+                      data-target="#collapseTwo"
+                      data-toggle="collapse"
+                    >
+                      Who we are
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  aria-labelledby="headingTwo"
+                  class="collapse"
+                  data-parent="#accordion"
+                  id="collapseTwo"
+                >
+                  <div
+                    class="card-body"
+                  >
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div
+                class="faqStorage"
+              >
+                <div
+                  class="card-header"
+                  id="headingThree"
+                >
+                  <h5
+                    class="mb-0"
+                  >
+                    <button
+                      aria-controls="collapseThree"
+                      aria-expanded="false"
+                      class="btn btn-link collapsed accordionLink"
+                      data-target="#collapseThree"
+                      data-toggle="collapse"
+                    >
+                      How can i buy someone's product?
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  aria-labelledby="headingThree"
+                  class="collapse"
+                  data-parent="#accordion"
+                  id="collapseThree"
+                >
+                  <div
+                    class="card-body"
+                  >
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div
+                class="faqStorage"
+              >
+                <div
+                  class="card-header"
+                  id="headingFour"
+                >
+                  <h5
+                    class="mb-0"
+                  >
+                    <button
+                      aria-controls="collapseFour"
+                      aria-expanded="false"
+                      class="btn btn-link collapsed accordionLink"
+                      data-target="#collapseFour"
+                      data-toggle="collapse"
+                    >
+                      How can i sell my product?
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  aria-labelledby="headingFour"
+                  class="collapse"
+                  data-parent="#accordion"
+                  id="collapseFour"
+                >
+                  <div
+                    class="card-body"
+                  >
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div
+                class="faqStorage"
+              >
+                <div
+                  class="card-header"
+                  id="headingFive"
+                >
+                  <h5
+                    class="mb-0"
+                  >
+                    <button
+                      aria-controls="collapseFive"
+                      aria-expanded="false"
+                      class="btn btn-link collapsed accordionLink"
+                      data-target="#collapseFive"
+                      data-toggle="collapse"
+                    >
+                      How to contact support?
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  aria-labelledby="headingFive"
+                  class="collapse"
+                  data-parent="#accordion"
+                  id="collapseFive"
+                >
+                  <div
+                    class="card-body"
+                  >
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div
+                class="faqStorage"
+              >
+                <div
+                  class="card-header"
+                  id="headingSix"
+                >
+                  <h5
+                    class="mb-0"
+                  >
+                    <button
+                      aria-controls="collapseSix"
+                      aria-expanded="false"
+                      class="btn btn-link collapsed accordionLink"
+                      data-target="#collapseSix"
+                      data-toggle="collapse"
+                    >
+                      How to send a report on a product?
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  aria-labelledby="headingSix"
+                  class="collapse"
+                  data-parent="#accordion"
+                  id="collapseSix"
+                >
+                  <div
+                    class="card-body"
+                  >
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div
+                class="faqStorage"
+              >
+                <div
+                  class="card-header"
+                  id="headingSeven"
+                >
+                  <h5
+                    class="mb-0"
+                  >
+                    <button
+                      aria-controls="collapseSeven"
+                      aria-expanded="false"
+                      class="btn btn-link collapsed accordionLink"
+                      data-target="#collapseSeven"
+                      data-toggle="collapse"
+                    >
+                      What bonuses i will when confirm my person?
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  aria-labelledby="headingSeven"
+                  class="collapse"
+                  data-parent="#accordion"
+                  id="collapseSeven"
+                >
+                  <div
+                    class="card-body"
+                  >
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div
+                class="faqStorage"
+              >
+                <div
+                  class="card-header"
+                  id="headingSeven"
+                >
+                  <h5
+                    class="mb-0"
+                  >
+                    <button
+                      aria-controls="collapseSeven"
+                      aria-expanded="false"
+                      class="btn btn-link collapsed accordionLink"
+                      data-target="#collapseSeven"
+                      data-toggle="collapse"
+                    >
+                      What is the commision from one product?
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  aria-labelledby="headingSeven"
+                  class="collapse"
+                  data-parent="#accordion"
+                  id="collapseSeven"
+                >
+                  <div
+                    class="card-body"
+                  >
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div
+                class="faqStorage"
+              >
+                <div
+                  class="card-header"
+                  id="headingEight"
+                >
+                  <h5
+                    class="mb-0"
+                  >
+                    <button
+                      aria-controls="collapseEight"
+                      aria-expanded="false"
+                      class="btn btn-link collapsed accordionLink"
+                      data-target="#collapseEight"
+                      data-toggle="collapse"
+                    >
+                      What is the minimum price of the product?
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  aria-labelledby="headingEight"
+                  class="collapse"
+                  data-parent="#accordion"
+                  id="collapseEight"
+                >
+                  <div
+                    class="card-body"
+                  >
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div
+                class="faqStorage"
+              >
+                <div
+                  class="card-header"
+                  id="headingNine"
+                >
+                  <h5
+                    class="mb-0"
+                  >
+                    <button
+                      aria-controls="collapseNine"
+                      aria-expanded="false"
+                      class="btn btn-link collapsed accordionLink"
+                      data-target="#collapseNine"
+                      data-toggle="collapse"
+                    >
+                      What is the maximum price of the product?
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  aria-labelledby="headingNine"
+                  class="collapse"
+                  data-parent="#accordion"
+                  id="collapseNine"
+                >
+                  <div
+                    class="card-body"
+                  >
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div
+                class="faqStorage"
+              >
+                <div
+                  class="card-header"
+                  id="headingTen"
+                >
+                  <h5
+                    class="mb-0"
+                  >
+                    <button
+                      aria-controls="collapseTen"
+                      aria-expanded="false"
+                      class="btn btn-link collapsed accordionLink"
+                      data-target="#collapseTen"
+                      data-toggle="collapse"
+                    >
+                      How can i upload images
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  aria-labelledby="headingTen"
+                  class="collapse"
+                  data-parent="#accordion"
+                  id="collapseTen"
+                >
+                  <div
+                    class="card-body"
+                  >
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <img
+                  alt="domoi"
+                  id="corona"
+                  src="https://images.pexels.com/photos/4031867/pexels-photo-4031867.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer
+        class="back FooterGrey"
+      >
+        <div
+          class="container grey"
+        >
+          <div
+            class="footer-cols"
+          >
+            <ul>
+              <li>
+                Make your choise
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  Explore the sea of products
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  Make your own product
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  Find any proposition
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  Communicate with sellers
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                Community
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  Our blog
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  Last news
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  Instagram
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                About us
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  Contact us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  Usefull links
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  Support us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  F.A.Q.
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                Others
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  Terms
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  Privacy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  Help
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  Accessibility
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="footer-bottom text-center white-text grey"
+        >
+          Copyright © 2020 WanderLance Team
+        </div>
+      </footer>
+    </div>
+  </div>
+</DocumentFragment>
+`;

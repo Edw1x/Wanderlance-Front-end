@@ -17,8 +17,8 @@ export default class UploadProductPhoto extends Component {
     super(props);
 
     this.state = {
-    id: null,
-       title: null,
+      id: null,
+      title: null,
       description: null,
       price: null,
       date: null,
@@ -27,14 +27,13 @@ export default class UploadProductPhoto extends Component {
         description: null,
       },
       owner: null,
-      fetched: false
+      fetched: false,
     };
   }
 
   componentDidMount() {
     if (isLogined) {
-
-      const { id } = this.props.match.params
+      const { id } = this.props.match.params;
       fetch(`http://localhost:8000/services/${id}/`, {
         method: "GET",
         headers: {
@@ -46,9 +45,8 @@ export default class UploadProductPhoto extends Component {
           console.log(data);
           this.setState(data);
           console.log(this.state);
-          this.setState({ fetched: true })
+          this.setState({ fetched: true });
         });
-
     }
   }
   render() {
@@ -66,7 +64,13 @@ export default class UploadProductPhoto extends Component {
                 description={this.state.description}
                 price={this.state.price}
                 username={this.state.owner ? this.state.owner.username : ""}
-                userimage={this.state.owner ? url + this.state.owner.image[this.state.owner.image.length - 1].image : ""}
+                userimage={
+                  this.state.owner
+                    ? url +
+                      this.state.owner.image[this.state.owner.image.length - 1]
+                        .image
+                    : ""
+                }
               />
             </div>
             <div>
@@ -81,8 +85,14 @@ export default class UploadProductPhoto extends Component {
               </div>
               <ImageUploader
                 urlProps={this.props.match.path}
-                image={this.state.owner ? this.state.owner.image[this.state.owner.image.length - 1].image : ""}
-                service= {this.state.id} />
+                image={
+                  this.state.owner
+                    ? this.state.owner.image[this.state.owner.image.length - 1]
+                        .image
+                    : ""
+                }
+                service={this.state.id}
+              />
             </div>
           </div>
         </main>
@@ -99,8 +109,14 @@ export default class UploadProductPhoto extends Component {
             <div class="mt-2">
               <p className="text-white">Choose product photo</p>
               <ImageUploader
-                image={this.state.owner ? this.state.owner.image[this.state.owner.image.length - 1].image : ""}
-                service= {this.state.id} />
+                image={
+                  this.state.owner
+                    ? this.state.owner.image[this.state.owner.image.length - 1]
+                        .image
+                    : ""
+                }
+                service={this.state.id}
+              />
             </div>
           </div>
         </div>

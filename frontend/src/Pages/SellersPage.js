@@ -10,21 +10,21 @@ import Footer from "../Components/Footer";
 const images = [
   {
     original:
-      "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://d27go2yy70kkz6.cloudfront.net/wp-content/uploads/2017/06/Programaci%C3%B3n-de-p%C3%A1ginas-web-en-Bootstrap-1024x811.jpg",
     thumbnail:
-      "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://d27go2yy70kkz6.cloudfront.net/wp-content/uploads/2017/06/Programaci%C3%B3n-de-p%C3%A1ginas-web-en-Bootstrap-1024x811.jpg",
   },
   {
     original:
-      "https://images.pexels.com/photos/245032/pexels-photo-245032.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://itchief.ru/assets/img/bootstrap/bootstrap-4.png",
     thumbnail:
-      "https://images.pexels.com/photos/245032/pexels-photo-245032.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://itchief.ru/assets/img/bootstrap/bootstrap-4.png",
   },
   {
     original:
-      "https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://www.bootstrapdash.com/wp-content/uploads/2017/08/bootstrap-4-beta-whats-new.jpg",
     thumbnail:
-      "https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://www.bootstrapdash.com/wp-content/uploads/2017/08/bootstrap-4-beta-whats-new.jpg",
   },
 ];
 const token = localStorage.getItem("Token");
@@ -80,7 +80,9 @@ export default class SellerPage extends Component {
                   </p>
                   <hr className="white" />
                   <h3 class="my-3">Seller</h3>
-                  <Ourseller />
+                  <Ourseller
+              username = {"PavloZinko"}
+              image = {"https://codeguida.com/media/post_title/bootstrap-logo.png"} />
                   <div class="mr-grid rating-margin">
                     <div class="col2">
                       <h5>Rating</h5>
@@ -88,13 +90,13 @@ export default class SellerPage extends Component {
                     <div class="col2">
                       <ul class="userRating">
                         <li>
-                          <i class="material-icons">&#128970;</i>
-                          <i class="material-icons">&#128970;</i>
-                          <i class="material-icons">&#128970;</i>
-                          <i class="material-icons">&#128970;</i>
+                          <i class="material-icons">&#10032;</i>
+                          <i class="material-icons">&#10032;</i>
+                          <i class="material-icons">&#10032;</i>
+                          <i class="material-icons">&#10032;</i>
                           <i class="material-icons">&#10032;</i>
                         </li>
-                        <li>4</li>
+                        <li>0.0</li>
                       </ul>
                     </div>
                   </div>
@@ -114,8 +116,6 @@ export default class SellerPage extends Component {
 
             <h1 class="my-4 red ">Reviews</h1>
             <div className="reviews">
-              <Review />
-              <Review />
               <Review />
             </div>
 

@@ -25,7 +25,7 @@ export default class OurSeller extends Component {
           <figcaption>
     <div class="fig-author-figure-title white-text red">{this.props.username}</div>
             <div class="small grey">
-              Last seen 10 min ago
+              Last seen 0 min ago
             </div>
           </figcaption>
         </figure>
